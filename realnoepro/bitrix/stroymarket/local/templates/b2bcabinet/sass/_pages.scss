@@ -1,0 +1,503 @@
+.page-products {
+  .table-responsive {
+    padding: 20px;
+    background-color: white;
+  }
+
+  .main-grid-table {
+    .main-grid-head-title {
+      white-space: pre-wrap;
+      max-width: 105px;
+    }
+  }
+}
+
+.page-order {
+  .card {
+    .card-body {
+      padding: 24px 40px;
+    }
+  }
+
+  &.page-order-seller {
+    #basic-tab1 {
+      .offer__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          width: 49%;
+        }
+      }
+    }
+  }
+
+  .sale-personal-profile-btn-block {
+    input {
+      margin-right: 16px;
+      @include r($small) {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .order-specification {
+    hr {
+      margin: 0;
+      padding-top: 16px;
+      background-color: white;
+    }
+
+    .card-header {
+      padding: 26px 0 10px 40px !important;
+
+      h2 {
+        position: relative;
+        margin-bottom: 0;
+      }
+    }
+
+    .offer__list {
+      li {
+        justify-content: flex-start;
+
+        b {
+          @include r($small) {
+            font-weight: 600;
+          }
+        }
+
+        i {
+          @include r($small) {
+            padding-top: 15px;
+            font-size: 14px;
+            &::before {
+              content: "Актуальное предложение";
+              display: block;
+              font-size: 12px;
+              opacity: .5;
+              position: absolute;
+              top: -4px;
+            }
+          }
+
+          .form-control-absolute {
+            min-width: 100px;
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding-top: 0 !important;
+      outline: none !important;
+    }
+
+    .form-group .form-control {
+      width: 280px;
+    }
+  }
+}
+
+.page-orders-list {
+  .main-grid-cell {
+    .order_changed {
+      top: 25px;
+      left: -15px;
+    }
+
+    .main-grid-cell-content {
+      margin-top: 20px !important;
+      margin-bottom: 20px !important;
+    }
+  }
+}
+
+.page-favorites {
+  .card {
+    .card-block:not(:first-child) {
+      border-top: 1px solid $color-font-light;
+      @include r($small) {
+        border-top: none !important;
+      }
+    }
+
+    .card-body {
+      border-radius: 0 !important;
+      padding-top: 24px;
+      @include r($small) {
+        background: none !important;
+        outline: none !important;
+      }
+
+      .card-title-empty {
+        font-size: 14px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .fav-exponents {
+    .card-title {
+      padding-bottom: 4px;
+    }
+  }
+
+  .fav-materials {
+    @include r($small) {
+      border: none;
+    }
+  }
+
+  .main-grid {
+    .main-grid-row::after {
+      left: 0;
+      right: 0;
+    }
+
+    .main-grid-container {
+      border: none;
+      @include r($small) {
+        background: none !important;
+        outline: none !important;
+      }
+    }
+
+    .main-grid-row-head {
+      .main-grid-cell-head[data-name="NAME"] {
+        .main-grid-cell-head-container {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .main-grid-row-body {
+      .main-grid-cell-left {
+        width: 25%;
+
+        &.main-grid-cell-preview_picture {
+          width: 5%;
+
+          img {
+            margin-right: 0;
+          }
+        }
+
+        &.main-grid-cell-name {
+          min-width: 552px;
+
+          .main-grid-cell-content {
+            margin-right: 65px;
+            margin-left: 0;
+            white-space: initial;
+
+          }
+        }
+      }
+    }
+
+    @include r($small) {
+      .main-grid-container {
+        overflow: hidden;
+      }
+      .main-grid-table {
+        .main-grid-row {
+          position: relative;
+          border: 1px solid $lightblue;
+          box-sizing: border-box;
+          border-radius: 4px;
+          margin-bottom: 8px;
+          background-color: white;
+
+          &.main-grid-not-count {
+            display: none;
+          }
+
+          &.active {
+            display: block;
+          }
+
+          &::after {
+            border: none;
+          }
+
+          .main-grid-cell {
+            border: none;
+            width: auto;
+            min-height: 40px;
+
+            &-action {
+              display: none;
+            }
+
+            &-preview_picture {
+              margin-left: 16px;
+              float: left;
+              width: 60px;
+            }
+
+            &-name {
+              .main-grid-cell-content {
+                white-space: inherit;
+                margin-bottom: 6px !important;
+              }
+            }
+
+            &-seller {
+              display: block;
+              font-size: 12px;
+
+              .main-grid-cell-content {
+                margin: 0 !important;
+              }
+            }
+
+            &-remove {
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+
+            .main-grid-cell-content {
+              margin: 16px 0 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-profile {
+  .col-md-6 {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .form-check-label {
+    display: flex;
+  }
+
+  .uf_email_notification {
+    .card-header h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-verification-email {
+    padding: 16px;
+  }
+}
+
+.page-discounts {
+  .main-grid .main-grid-row::after {
+    left: 0;
+    right: 0;
+  }
+
+  .main-grid-cell-name {
+    font-weight: 600;
+  }
+}
+
+.page-product {
+  .blank_detail-menu {
+    border-bottom: 1px solid $color-font-light;
+  }
+
+  .card-body:not(.blank_detail-menu) {
+    height: 100%;
+
+  }
+
+  .blank_detail .blank_detail-menu .nav-item .nav-link {
+    padding-bottom: 4px;
+  }
+
+  .sale-personal-profile-btn-block {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1247px;
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 8px 40px;
+
+    input:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+
+  .products-table-personal {
+    .main-grid {
+      .main-grid-row-head {
+        padding-bottom: 10px;
+      }
+
+      .main-grid-cell {
+        padding: 10px 0;
+      }
+
+      .main-grid-row::after {
+        left: 10px;
+      }
+    }
+  }
+}
+
+.page-sections {
+  .main-grid .main-grid-row {
+    .main-grid-cell-product_list {
+      .main-grid-cell-content {
+        justify-content: flex-end;
+        margin-right: 40px;
+      }
+
+      a {
+        color: $primary;
+
+        i {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .main-grid-cell-name {
+      a.add-section {
+        margin-left: 16px;
+        color: $primary;
+
+        i {
+          margin-right: 6px;
+        }
+      }
+    }
+
+    .main-grid-cell .main-grid-cell-content {
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.page-store {
+  .card-body {
+    height: 100%;
+  }
+
+  .sale-personal-profile-btn-block {
+    margin-top: 16px;
+  }
+}
+
+.page-conditions-delivery {
+  .info {
+    align-items: flex-start !important;
+  }
+
+  .offer__list {
+    li {
+      padding: 8px 0;
+
+      &::before {
+        content: none;
+      }
+
+      b {
+        width: 70%;
+      }
+
+      i {
+        padding-right: 55px;
+
+        .form-control {
+          width: 70px;
+          padding: 5px;
+        }
+      }
+
+    }
+  }
+
+  .card {
+    .card-ind-request {
+      border-top: 1px solid $color-font-light;
+
+      .offer__list li i {
+        padding-right: 25px;
+
+        .form-control {
+          width: 114px !important;
+        }
+      }
+    }
+  }
+}
+
+.page-add-section {
+  .card {
+    .card-header {
+      padding-left: 40px;
+      padding-bottom: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .section_new {
+    margin-left: 15px;
+  }
+
+  .form-group .form-control {
+    width: 256px;
+  }
+}
+
+.page-add-company {
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .payer_type-title {
+    border-bottom: 1px solid $lightblue
+  }
+}
+
+.page-catalog-settings {
+  .card {
+    .card-body {
+      padding-bottom: 20px;
+    }
+
+    .card-block:last-child {
+      border-top: 1px solid $lightblue
+    }
+
+    .btn.btn-transparent {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        border: none;
+      }
+
+      span {
+        padding-left: 13px;
+        padding-top: 2px;
+      }
+    }
+
+    .adm-fileinput-wrapper-single .adm-fileinput-area {
+      min-height: 110px;
+    }
+  }
+}

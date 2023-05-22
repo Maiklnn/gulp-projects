@@ -1,0 +1,1644 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оформление заказа -
+        B2B-кабинет Гигастрой</title>
+
+
+
+    <link href="https://stroymarket.su/bitrix/js/ui/tooltip/tooltip.css?167232437113283" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/js/main/core/css/core_tooltip.css?16723243708811" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?16723243712599" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/js/main/popup/dist/main.popup.bundle.css?167232437026961" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/js/main/core/css/core_date.css?167232437010396" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/js/main/core/css/core_canvas.css?16723243704014" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/js/main/core/css/core_fileinput.css?167232437068238" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/components/web2b/market.order.new/.default/style.css?168050589018440" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/components/web2b/market.order.new/.default/grid.css?1676878176507" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/bitrix/panel/main/popup.css?167232434623085" type="text/css"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/assets/css/icons/icomoon/styles.css?167687817647588" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/assets/css/bootstrap.min.css?1676878176222493" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/assets/css/bootstrap.min.css" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/assets/css/layout.min.css?167687817638491" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/assets/css/components.min.css?1676878176303572" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/assets/css/jquery-ui.css?167687817636014" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/b2bcabinet/components/bitrix/menu/b2bcabinet/style.css?1676878176867" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://stroymarket.su/local/templates/.default/components/bitrix/breadcrumb/.default/style.css?1676878175609" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+
+    <link href="/local/templates/b2bcabinet/styles.css?1680775229192765" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+
+
+
+
+
+    <script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+    <script>(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+    <script src="https://stroymarket.su/bitrix/js/main/core/core.js?1672324370569621"></script>
+
+    <script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+	BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+    <script>(window.BX||top.BX).message({'pull_server_enabled':'N','pull_config_timestamp':'1608885242','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+    <script>(window.BX||top.BX).message({'MAIN_UL_TOOLBAR_MESSAGES_CHAT':'Написать сообщение','MAIN_UL_TOOLBAR_VIDEO_CALL':'Видеозвонок','MAIN_UL_TOOLBAR_BIRTHDAY':'День рождения','MAIN_UL_TOOLBAR_HONORED':'На доске почета','MAIN_UL_TOOLBAR_ABSENT':'Вне офиса'});</script>
+    <script>(window.BX||top.BX).message({'TOOLTIP_ENABLED':'Y'});</script>
+    <script>(window.BX||top.BX).message({'AMPM_MODE':false});(window.BX||top.BX).message({'MONTH_1':'Январь','MONTH_2':'Февраль','MONTH_3':'Март','MONTH_4':'Апрель','MONTH_5':'Май','MONTH_6':'Июнь','MONTH_7':'Июль','MONTH_8':'Август','MONTH_9':'Сентябрь','MONTH_10':'Октябрь','MONTH_11':'Ноябрь','MONTH_12':'Декабрь','MONTH_1_S':'января','MONTH_2_S':'февраля','MONTH_3_S':'марта','MONTH_4_S':'апреля','MONTH_5_S':'мая','MONTH_6_S':'июня','MONTH_7_S':'июля','MONTH_8_S':'августа','MONTH_9_S':'сентября','MONTH_10_S':'октября','MONTH_11_S':'ноября','MONTH_12_S':'декабря','MON_1':'янв','MON_2':'фев','MON_3':'мар','MON_4':'апр','MON_5':'май','MON_6':'июн','MON_7':'июл','MON_8':'авг','MON_9':'сен','MON_10':'окт','MON_11':'ноя','MON_12':'дек','DAY_OF_WEEK_0':'Воскресенье','DAY_OF_WEEK_1':'Понедельник','DAY_OF_WEEK_2':'Вторник','DAY_OF_WEEK_3':'Среда','DAY_OF_WEEK_4':'Четверг','DAY_OF_WEEK_5':'Пятница','DAY_OF_WEEK_6':'Суббота','DOW_0':'Вс','DOW_1':'Пн','DOW_2':'Вт','DOW_3':'Ср','DOW_4':'Чт','DOW_5':'Пт','DOW_6':'Сб','FD_SECOND_AGO_0':'#VALUE# секунд назад','FD_SECOND_AGO_1':'#VALUE# секунду назад','FD_SECOND_AGO_10_20':'#VALUE# секунд назад','FD_SECOND_AGO_MOD_1':'#VALUE# секунду назад','FD_SECOND_AGO_MOD_2_4':'#VALUE# секунды назад','FD_SECOND_AGO_MOD_OTHER':'#VALUE# секунд назад','FD_SECOND_DIFF_0':'#VALUE# секунд','FD_SECOND_DIFF_1':'#VALUE# секунда','FD_SECOND_DIFF_10_20':'#VALUE# секунд','FD_SECOND_DIFF_MOD_1':'#VALUE# секунда','FD_SECOND_DIFF_MOD_2_4':'#VALUE# секунды','FD_SECOND_DIFF_MOD_OTHER':'#VALUE# секунд','FD_SECOND_SHORT':'#VALUE#с','FD_MINUTE_AGO_0':'#VALUE# минут назад','FD_MINUTE_AGO_1':'#VALUE# минуту назад','FD_MINUTE_AGO_10_20':'#VALUE# минут назад','FD_MINUTE_AGO_MOD_1':'#VALUE# минуту назад','FD_MINUTE_AGO_MOD_2_4':'#VALUE# минуты назад','FD_MINUTE_AGO_MOD_OTHER':'#VALUE# минут назад','FD_MINUTE_DIFF_0':'#VALUE# минут','FD_MINUTE_DIFF_1':'#VALUE# минута','FD_MINUTE_DIFF_10_20':'#VALUE# минут','FD_MINUTE_DIFF_MOD_1':'#VALUE# минута','FD_MINUTE_DIFF_MOD_2_4':'#VALUE# минуты','FD_MINUTE_DIFF_MOD_OTHER':'#VALUE# минут','FD_MINUTE_0':'#VALUE# минут','FD_MINUTE_1':'#VALUE# минуту','FD_MINUTE_10_20':'#VALUE# минут','FD_MINUTE_MOD_1':'#VALUE# минуту','FD_MINUTE_MOD_2_4':'#VALUE# минуты','FD_MINUTE_MOD_OTHER':'#VALUE# минут','FD_MINUTE_SHORT':'#VALUE#мин','FD_HOUR_AGO_0':'#VALUE# часов назад','FD_HOUR_AGO_1':'#VALUE# час назад','FD_HOUR_AGO_10_20':'#VALUE# часов назад','FD_HOUR_AGO_MOD_1':'#VALUE# час назад','FD_HOUR_AGO_MOD_2_4':'#VALUE# часа назад','FD_HOUR_AGO_MOD_OTHER':'#VALUE# часов назад','FD_HOUR_DIFF_0':'#VALUE# часов','FD_HOUR_DIFF_1':'#VALUE# час','FD_HOUR_DIFF_10_20':'#VALUE# часов','FD_HOUR_DIFF_MOD_1':'#VALUE# час','FD_HOUR_DIFF_MOD_2_4':'#VALUE# часа','FD_HOUR_DIFF_MOD_OTHER':'#VALUE# часов','FD_HOUR_SHORT':'#VALUE#ч','FD_YESTERDAY':'вчера','FD_TODAY':'сегодня','FD_TOMORROW':'завтра','FD_DAY_AGO_0':'#VALUE# дней назад','FD_DAY_AGO_1':'#VALUE# день назад','FD_DAY_AGO_10_20':'#VALUE# дней назад','FD_DAY_AGO_MOD_1':'#VALUE# день назад','FD_DAY_AGO_MOD_2_4':'#VALUE# дня назад','FD_DAY_AGO_MOD_OTHER':'#VALUE# дней назад','FD_DAY_DIFF_0':'#VALUE# дней','FD_DAY_DIFF_1':'#VALUE# день','FD_DAY_DIFF_10_20':'#VALUE# дней','FD_DAY_DIFF_MOD_1':'#VALUE# день','FD_DAY_DIFF_MOD_2_4':'#VALUE# дня','FD_DAY_DIFF_MOD_OTHER':'#VALUE# дней','FD_DAY_AT_TIME':'#DAY# в #TIME#','FD_DAY_SHORT':'#VALUE#д','FD_MONTH_AGO_0':'#VALUE# месяцев назад','FD_MONTH_AGO_1':'#VALUE# месяц назад','FD_MONTH_AGO_10_20':'#VALUE# месяцев назад','FD_MONTH_AGO_MOD_1':'#VALUE# месяц назад','FD_MONTH_AGO_MOD_2_4':'#VALUE# месяца назад','FD_MONTH_AGO_MOD_OTHER':'#VALUE# месяцев назад','FD_MONTH_DIFF_0':'#VALUE# месяцев','FD_MONTH_DIFF_1':'#VALUE# месяц','FD_MONTH_DIFF_10_20':'#VALUE# месяцев','FD_MONTH_DIFF_MOD_1':'#VALUE# месяц','FD_MONTH_DIFF_MOD_2_4':'#VALUE# месяца','FD_MONTH_DIFF_MOD_OTHER':'#VALUE# месяцев','FD_MONTH_SHORT':'#VALUE#мес','FD_YEARS_AGO_0':'#VALUE# лет назад','FD_YEARS_AGO_1':'#VALUE# год назад','FD_YEARS_AGO_10_20':'#VALUE# лет назад','FD_YEARS_AGO_MOD_1':'#VALUE# год назад','FD_YEARS_AGO_MOD_2_4':'#VALUE# года назад','FD_YEARS_AGO_MOD_OTHER':'#VALUE# лет назад','FD_YEARS_DIFF_0':'#VALUE# лет','FD_YEARS_DIFF_1':'#VALUE# год','FD_YEARS_DIFF_10_20':'#VALUE# лет','FD_YEARS_DIFF_MOD_1':'#VALUE# год','FD_YEARS_DIFF_MOD_2_4':'#VALUE# года','FD_YEARS_DIFF_MOD_OTHER':'#VALUE# лет','FD_YEARS_SHORT_0':'#VALUE#л','FD_YEARS_SHORT_1':'#VALUE#г','FD_YEARS_SHORT_10_20':'#VALUE#л','FD_YEARS_SHORT_MOD_1':'#VALUE#г','FD_YEARS_SHORT_MOD_2_4':'#VALUE#г','FD_YEARS_SHORT_MOD_OTHER':'#VALUE#л','CAL_BUTTON':'Выбрать','CAL_TIME_SET':'Установить время','CAL_TIME':'Время','FD_LAST_SEEN_TOMORROW':'завтра в #TIME#','FD_LAST_SEEN_NOW':'только что','FD_LAST_SEEN_TODAY':'сегодня в #TIME#','FD_LAST_SEEN_YESTERDAY':'вчера в #TIME#','FD_LAST_SEEN_MORE_YEAR':'более года назад'});</script>
+    <script>(window.BX||top.BX).message({'WEEK_START':'1'});</script>
+    <script>(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+    <script>(window.BX||top.BX).message({'phpMaxFileUploads':'100','phpPostMaxSize':'1073741824','phpUploadMaxFilesize':'1073741824','bxImageExtensions':'jpg,bmp,jpeg,jpe,gif,png,webp','bxUploaderLog':'N','bxQuota':true});(window.BX||top.BX).message({'UPLOADER_INPUT_IS_NOT_DEFINED':'Не указано поле ввода.','UPLOADER_ACTION_URL_NOT_DEFINED':'Не указан путь для загрузки файлов.','FILE_BAD_SIZE':'Превышен максимальный размер загружаемого файла','FILE_SIZE_b':'Б','FILE_SIZE_Kb':'КБ','FILE_SIZE_Mb':'МБ','FILE_SIZE_Gb':'ГБ','FILE_SIZE_Tb':'ТБ','UPLOADER_UPLOADING_ERROR':'Ошибка загрузки.','UPLOADER_UPLOADING_ERROR1':'Некорректный ответ сервера.','UPLOADER_UPLOADING_ERROR2':'Количество файлов указанной формы превышает допустимое значение.','UPLOADER_UPLOADING_ERROR4':'Размер файла превышает допустимый.','UPLOADER_UPLOADING_ERROR5':'Не получен ответ от сервера.','UPLOADER_UPLOADING_ERROR6':'Не достаточно места на сервере. ','UPLOADER_UPLOADING_ERROR3':'Файл не склеен на сервере.','UPLOADER_UPLOADING_ONBEFOREUNLOAD':'Загрузка файлов не завершена. Вы хотите покинуть страницу?'});</script>
+    <script>(window.BX||top.BX).message({'CANVAS_OK':'Применить','CANVAS_CANCEL':'Отменить','CANVAS_DELETE':'Удалить','CANVAS_TURN_L':'Повернуть против часовой стрелки','CANVAS_TURN_R':'Повернуть по часовой стрелке','CANVAS_FLIP_V':'Отразить вертикально','CANVAS_FLIP_H':'Отразить горизонтально','CANVAS_CROP':'Обрезать','CANVAS_GRAYSCALE':'Градация серого','CANVAS_SIGN':'Подписать картинку','CANVAS_POSTER_SIGN':'Подпись:'});</script>
+    <script>(window.BX||top.BX).message({'JS_CORE_FILE_UPLOAD':'Загрузить с компьютера','JS_CORE_FILE_INSERT_PATH':'Вставить путь к файлу','JS_CORE_FILE_MEDIALIB':'Выбрать из медиабиблиотеки','JS_CORE_FILE_SITE':'Выбрать из структуры','JS_CORE_FILE_CLOUD':'Загрузить из облаков','JS_CORE_FI_UPLOAD_DENIED':'Загрузка запрещена','JS_CORE_FI_TOO_MANY_FILES':'Количество файлов превышает допустимое количество #amount#','JS_CORE_FI_TOO_MANY_FILES2':'Достигнут лимит количества файлов','JS_CORE_FI_TOO_MANY_FILES3':'Превышен лимит количества файлов','JS_CORE_FI_FRAME_Y':'Использовать кадрирование','JS_CORE_FI_PIN_DESCRIPTION':'Закрепить поле описания','JS_CORE_FI_CLEAR':'Очистить','JS_CORE_FI_FRAME_IS_LOADING':'Идет загрузка картинок. Подождите, пожалуйста. Отменить кадрирование?','JS_CORE_FI_FRAME_IS_LOADING_CANCEL':'Да, отменить.','JS_CORE_FI_LINK':'Ссылка:','JS_CORE_FI_ADD_LINK':'Добавить ссылку','JS_CORE_FI_ADD':'Добавить','JS_CORE_FILE_APPLY':'Применить','JS_CORE_FI_CANCEL':'Отменить','JS_CORE_FI_TITLE':'Название','JS_CORE_FI_WIDTH':'Ширина','JS_CORE_FI_HEIGHT':'Высота','JS_CORE_FI_ADD_PRESET':'Добавить пресет','JS_CORE_FI_SAVE_PRESET':'Сохранить как пресет','JS_CORE_FI_CANCEL_PRESET':'Отменить<br> действие','JS_CORE_FI_FRAMING':'Кадрирование: ','JS_CORE_FI_USE_PRESET':'Использовать пресет','JS_CORE_FI_EDIT_PRESET':'Редактировать пресет','JS_CORE_FI_PRESET_IS_TOO_BIG':'Размер картинки меньше выбранного пресета. Увеличить картинку?','JS_CORE_FI_SCALE':'Увеличить','JS_CORE_FILE_INFO_SIZE':'Объём','JS_CORE_FILE_INFO_DIM':'Размер','JS_CORE_FILE_INFO_LINK':'Ссылка','JS_CORE_FILE_DESCRIPTION':'Описание'});</script>
+    <script>(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'e1','SITE_DIR':'/','USER_ID':'452','SERVER_TIME':'1681242246','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'fe9a16470cf5989ddfd0298dbb9354c3'});</script>
+
+
+    <script src="https://stroymarket.su/bitrix/js/twim.recaptchafree/script.js?16723243724421"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=ru"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_ls.js?167232437010430"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/session.js?16723243713701"></script>
+    <script src="https://stroymarket.su/bitrix/js/pull/protobuf/protobuf.js?1672324372274055"></script>
+    <script src="https://stroymarket.su/bitrix/js/pull/protobuf/model.js?167232437270928"></script>
+    <script src="https://stroymarket.su/bitrix/js/rest/client/rest.client.js?167232437117414"></script>
+    <script src="https://stroymarket.su/bitrix/js/pull/client/pull.client.js?167232437270757"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/utils.js?167232437129279"></script>
+    <script src="https://stroymarket.su/bitrix/js/ui/tooltip/tooltip.js?167232437120377"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_tooltip.js?167232437015458"></script>
+    <script src="https://stroymarket.su/bitrix/js/ui/vue/vue2/prod/dist/vue.bundle.js?1672324371181346"></script>
+    <script src="https://stroymarket.su/bitrix/js/currency/currency-core/dist/currency-core.bundle.js?16723243715396"></script>
+    <script src="https://stroymarket.su/bitrix/js/currency/core_currency.js?16723243721141"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/popup/dist/main.popup.bundle.js?1672324370111470"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/date/main.date.js?167232437134530"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_date.js?167232437036080"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/pageobject/pageobject.js?1672324371864"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_window.js?167232437098768"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_dd.js?16723243703613"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_uploader/common.js?167232437015477"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_uploader/uploader.js?167232437098229"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_uploader/file.js?167232437038495"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_uploader/queue.js?167232437018127"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_canvas.js?167232437025966"></script>
+    <script src="https://stroymarket.su/bitrix/js/main/core/core_fileinput.js?1672324370138345"></script>
+    <script>
+		bxSession.Expand('fe9a16470cf5989ddfd0298dbb9354c3.f21a389507889b404f23a18cf4effd7bfd6a3fd67a5038dcf820cfbc4f0fe880');
+    </script>
+    <script>
+		(function () {
+			"use strict";
+
+			var counter = function ()
+			{
+				var cookie = (function (name) {
+					var parts = ("; " + document.cookie).split("; " + name + "=");
+					if (parts.length == 2) {
+						try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+						catch (e) {}
+					}
+				})("BITRIX_CONVERSION_CONTEXT_e1");
+
+				if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+					return;
+
+				var request = new XMLHttpRequest();
+				request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				request.send(
+					"SITE_ID="+encodeURIComponent("e1")+
+					"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+					"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+				);
+			};
+
+			if (window.frameRequestStart === true)
+				BX.addCustomEvent("onFrameDataReceived", counter);
+			else
+				BX.ready(counter);
+		})();
+    </script>
+    <script>BX.bind(window, "load", function(){BX.PULL.start();});</script>
+    <meta property="og:url" content="http://ovxego.https://stroymarket.su:443/b2bcabinet/orders/make/">
+
+
+
+    <script src="/local/templates/b2bcabinet/assets/js/main/jquery.min.js?167687817686659"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/jquery-ui.min.js?1676878176254916"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/datepicker-ru.js?16768781761450"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/bootstrap.bundle.min.js?167687817670966"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/classes.js?1676878176757"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/script.js?167878648015298"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/validation.js?16768781764379"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/verify.js?16768781765714"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/app.js?167878648020775"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/plugins/forms/styling/switch.min.js?167687817614920"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/pages/form_checkboxes_radios.js?16768781763554"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/main/dashboard.js?1678789605136030"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/plugins/forms/styling/switchery.min.js?167687817624433"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/plugins/forms/styling/uniform.min.js?16768781768530"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/jquery.fancybox.min.js?167687817668253"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/plugins/maskedinput.js?16768781764324"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/pages/form_select2.js?167687817611126"></script>
+    <script src="/local/templates/b2bcabinet/assets/js/pages/uniform_init.js?1676878176956"></script>
+    <script src="/local/templates/b2bcabinet/components/bitrix/menu/b2bcabinet/script.js?16811195451086"></script>
+    <script src="/local/templates/b2bcabinet/components/web2b/market.order.new/.default/script.js?167964689922448"></script>
+    <script>var _ba = _ba || []; _ba.push(["aid", "2e370855606106d95cf4d97078fb2542"]); _ba.push(["host", "ovxego.https://stroymarket.su"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+    <script>
+
+		BX.ready(function() {
+			var arMULUserList = ['mul_I0ksrDdk'];
+			var arMULUserListOnline = [];
+
+			for(var i=0; i<arMULUserList.length; i++)
+			{
+				var elOnline = document.getElementById(arMULUserList[i]);
+				if(elOnline)
+				{
+					if (BX.util.in_array(arMULUserList[i], arMULUserListOnline))
+					{
+						elOnline.className = "bx-user-info-online";
+						elOnline.title = "на сайте";
+					}
+					else
+					{
+						elOnline.className = "bx-user-info-offline";
+						elOnline.title = "";
+					}
+
+				}
+
+			}
+		});
+    </script>
+    <script>new Image().src='https://https://stroymarket.su/bitrix/spread.php?s=QklUUklYX1NNX1NBTEVfVUlEATBhYzdhNWFjZjkwNzBkMDc2NDI0YTRmYTUzYWM5YTM2ATE3MTIzNDYyNDUBLwEBAQJCSVRSSVhfU01fTE9HSU4BYnZlenl4QG1haWx0by5wbHVzATE3MTIzNDYyNDUBLwEBATECQklUUklYX1NNX0dVRVNUX0lEATI1NTQ0ATE3MTIzNDYyNDUBLwEBAQJCSVRSSVhfU01fTEFTVF9WSVNJVAExMS4wNC4yMDIzIDIyOjQ0OjA1ATE3MTIzNDYyNDUBLwEBAQI%3D&k=4ee4398844ae96be2ea46b2b0df0a036';
+    </script>
+
+
+</head>
+
+<body>
+<!-- Main navbar -->
+<header class="navbar navbar-expand-md">
+    <div class="navbar-logo xs-none">
+        <a href="//https://stroymarket.su">
+            <img src="/local/templates/b2bcabinet/assets/images/stroymarket-logo.png" alt="">
+        </a>
+    </div>
+    <div class="navbar-collapse">
+        <div class="header-left-block">
+            <div class="header-company">
+                <div class="header-company-user xl-none">
+                    <a href="#" data-fancybox data-src="#js-user-popup"
+                       class="">
+                        <img src="/local/templates/b2bcabinet/assets/images/icons_profile.svg" alt="">
+                    </a>
+                </div>
+                <div class="header-company-name xs-none">
+                    B2B-кабинет компании
+                </div>
+                <div class="header-company-select">
+                    <a id="js-company-link" href="/>"
+                       class="btn btn-white header-company-select-name">Гигастрой                        <span class="header-company-arrow">
+                                <i class="icon-arrow-down12"></i>
+                            </span>
+                    </a>
+                    <div class="stores_list">
+                        <div class="stores_list_input">
+                            <input type="text" id="search-store" placeholder="Введите название поставщика"
+                                   autocomplete="off">
+                            <img src="/local/templates/b2bcabinet/assets/images/icons_search.svg" alt="">
+                        </div>
+
+                        <ul class="js-stores-results">
+                            <li data-id="1">
+                                <a href="//fantomslim.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    fantomslim                                        </a>
+                            </li>
+                            <li data-id="2">
+                                <a href="//owyaq.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    owyaq@mailto.plus                                        </a>
+                            </li>
+                            <li data-id="3">
+                                <a href="//test20230331.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Test20230331                                        </a>
+                            </li>
+                            <li data-id="4">
+                                <a href="//test20230404.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Test20230404                                        </a>
+                            </li>
+                            <li data-id="5">
+                                <a href="//ubaeqm.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ubaeqm@mailto.plus                                        </a>
+                            </li>
+                            <li data-id="6">
+                                <a href="//unonxu.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    unonxu@mailto.plus                                        </a>
+                            </li>
+                            <li data-id="7">
+                                <a href="//ksytuf.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Алитол                                        </a>
+                            </li>
+                            <li data-id="8">
+                                <a href="//gimalllay.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Лайаут                                        </a>
+                            </li>
+                            <li data-id="9">
+                                <a href="//vorotaaa.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО &quot;Ворота&quot;                                        </a>
+                            </li>
+                            <li data-id="10">
+                                <a href="//dorogzhnoepolotnoo.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО &quot;Дорожное полотно&quot;                                        </a>
+                            </li>
+                            <li data-id="11">
+                                <a href="//prebriki.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО &quot;Поребрик&quot;                                        </a>
+                            </li>
+                            <li data-id="12">
+                                <a href="//romashhhh.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО &quot;Ромашка&quot;                                        </a>
+                            </li>
+                            <li data-id="13">
+                                <a href="//stroytrass.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО &quot;Строители трасс&quot;                                        </a>
+                            </li>
+                            <li data-id="14">
+                                <a href="//dmitrstal.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО Дитровсталь                                        </a>
+                            </li>
+                            <li data-id="15">
+                                <a href="//fffantastikkk.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    ООО Фантастика                                        </a>
+                            </li>
+                            <li data-id="16">
+                                <a href="//dmoe.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Пилизиум                                        </a>
+                            </li>
+                            <li data-id="17">
+                                <a href="//nzuyq.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Прилетела                                        </a>
+                            </li>
+                            <li data-id="18">
+                                <a href="//cpaxon.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Ручки сервис                                        </a>
+                            </li>
+                            <li data-id="19">
+                                <a href="//stroyservis.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Стрйосервис                                        </a>
+                            </li>
+                            <li data-id="20">
+                                <a href="//test20230410.https://stroymarket.su/b2bcabinet/" class="btn btn-white">
+                                    Тест20230410                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right-block">
+            <div class="header-catalog">
+                <a href="/b2bcabinet/orders/blank_zakaza/"
+                   class="">
+                    <i class="icon">
+                        <img src="/local/templates/b2bcabinet/assets/images/icons_catalog.svg" alt="">
+                    </i>
+                    <span class="xs-none">Каталог</span>
+                </a>
+            </div>
+            <div class="header-basket">
+                <span class="badge">1</span>
+                <a href="/b2bcabinet/orders/make/"
+                   class="active">
+                    <i class="icon">
+                        <img src="/local/templates/b2bcabinet/assets/images/icons_basket.svg" alt="">
+                    </i>
+                    <span class="xs-none">Корзина</span>
+                </a>
+            </div>
+            <div class="header-logout xs-none">
+                <a href="?logout=yes" class="btn btn-light">
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /main navbar -->
+<!-- Page content -->
+<div class="page-content">
+    <div class="navbar__mobile">
+        <a href="/b2bcabinet/orders/blank_zakaza/" class="">
+            <img src="/local/templates/b2bcabinet/assets/images/icons_store3.svg" alt="">
+            <span>Магазин</span>
+        </a>
+        <a href="/b2bcabinet/favorites/" class="">
+            <i class="icon-my-favorites"></i>
+            <span>Избранное</span>
+        </a>
+        <a href="/b2bcabinet/orders/index.php" class="">
+            <i class="icon-my-orders"></i>
+            <span>Мои заказы</span>
+        </a>
+        <a href="/b2bcabinet/personal/buyer/index.php"
+           class="">
+            <img src="/local/templates/b2bcabinet/assets/images/icons_case.svg" alt="">
+            <span>Компании</span>
+        </a>
+    </div>
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-main sidebar-fixed sidebar-expand-md">
+        <!-- Sidebar content -->
+        <div class="sidebar-content sidebar-content-b2bcabinet">
+            <!-- User menu -->
+            <div class="sidebar-user">
+                <div class="bx-user-info-anchor-nolink" id="anchor_2QXe6Ka6"
+                     bx-tooltip-user-id="">            <div class="card-body">
+                    <div class="bx-user-info-anchor-cell d-flex js-user-info-popup">
+                        <i class="icon">
+                            <img src="/local/templates/b2bcabinet/assets/images/icons_profile.svg" alt="">
+                        </i>
+                        <div>
+                            <div class="bx-user-info-anchor-cell-settings">
+                                <span class="bx-user-info-name">Викторов Слава</span>
+                                <i class="icon-arrow-right22"></i>
+                                <ul class="bx-user-info-popup js-user-info-popup-active">
+                                    <li><a href="/b2bcabinet/personal/index.php">Профиль</a></li>
+                                    <li><a href="?logout=yes">Выйти</a></li>
+                                </ul>
+                            </div>
+                            <div class="bx-user-info-role">
+                                <div class="bx-user-info-role-select">
+                                    Покупатель                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>    </div>
+
+            <script>
+				document.addEventListener("DOMContentLoaded", function(event) {
+					if(document.body.clientWidth < 1490) {
+						document.querySelector('.bx-user-info-popup').style.left = '214.5px';
+					}
+				});
+            </script>
+            <!-- /user menu -->
+
+            <!-- Main navigation -->
+            <div class="card card-sidebar-mobile">
+
+                <ul class="nav nav-sidebar" data-nav-type="accordion">
+                    <li class="nav-item">
+                        <a href="/b2bcabinet/orders/index.php"
+                           class=" nav-link menu-orders" >
+                            <i class="icon-my-orders"></i>
+                            <span>Мои заказы</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/b2bcabinet/favorites/"
+                           class=" nav-link " >
+                            <i class="icon-my-favorites"></i>
+                            <span>Избранное</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/b2bcabinet/personal/buyer/index.php"
+                           class=" nav-link " >
+                            <i class="icon-my-case"></i>
+                            <span>Мои компании</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/b2bcabinet/chat/"
+                           class=" nav-link " >
+                            <i class="icon-my-chat"></i>
+                            <span>Чат</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /main navigation -->
+        </div>
+        <!-- /sidebar content -->
+    </div>
+    <!-- /main sidebar -->
+    <!-- Main content -->
+    <div class="content-wrapper">
+        <!-- Page header -->
+        <div class="page-header">
+            <div class="page-header-content">
+                <ul class="bx-user-info-popup js-user-info-popup-active">
+                    <li><a href="/b2bcabinet/personal/index.php">Профиль</a></li>
+                    <li><a href="?logout=yes">Выйти</a></li>
+                </ul>
+                <link src="https://stroymarket.su//bitrix/css/main/font-awesome.css?167232437328777" type="text/css" rel="stylesheet" />
+                <div class="bx-breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                    <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+
+                        <a href="/b2bcabinet/" title="Главная" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </div>
+                    <div class="bx-breadcrumb-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <i class="fa fa-circle"></i>
+                        <a href="/b2bcabinet/orders/" title="Заказы" itemprop="item">
+                            <span itemprop="name">Заказы</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </div>
+                    <div class="bx-breadcrumb-item">
+                        <i class="fa fa-circle"></i>
+                        <span>Оформление заказа</span>
+                    </div><div style="clear:both"></div></div>                <div class="page-title">
+                <h1>Оформление заказа</h1>
+                <a type="button" href="/orders/make/index.php"
+                   class="btn btn-plus hide-text-mob btn-light"
+                   data-fancybox=""
+                   data-src="/local/templates/b2bcabinet/components/web2b/market.order.new/.default/web2b_element_search_dialog.php"
+                   data-type="ajax">
+                    Добавить товар
+                </a>
+            </div>
+            </div>
+        </div
+                <!-- /page header -->
+                <!-- Content area -->
+        <div class="page-content-area">
+
+
+
+            <div class="index_checkout page-basket">
+
+                <form @submit="checkForm" data-ajax="order-basket" id="specification" method="POST">
+                    <input type="hidden" name="order_properties[IBLOCK_SECTION_ID]" value="5375">
+                    <div v-if="basket.items.length !== 0">
+                        <input type="hidden" name="order_properties[CHANGE_ORDER_BUYER]" value="Y">
+                        <div class="card mt-0">
+                            <div class="card-body index_checkout-table">
+                                <table class="table datatable-save-state container" id="basket-item-list">
+                                    <thead>
+                                    <tr class="main-grid row">
+                                        <th class="main-grid-head-title col-md-1"></th>
+                                        <th class="col-md-4 main-grid-head-title main-grid-head-title__sortable" @click="sortBasket('name', sort_basket_order == 'desc' ? 'asc' : 'desc');">
+                                            Наименование
+                                            <span class="main-grid-head-title__sort" :class="{asc: sort_basket_order === 'asc'}">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                            <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+                        </svg>
+                    </span>
+                                        </th>
+                                        <th class="main-grid-head-title col-md-2">
+                                            Стоимость
+                                        </th>
+                                        <th class="main-grid-head-title col-md-2">
+                                            Количество
+                                        </th>
+                                        <th class="main-grid-head-title col-m-1">
+                                            Сумма
+                                        </th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody id="basket-item-table">
+                                    <tr class="row" v-for="(item, index) in obOrder.basket.items">
+                                        <td class="xs-none col-md-1">
+                                            <div class="">
+                                                <img class="img-cover" width="40" height="40" alt="" :src="item.image">
+                                            </div>
+                                        </td>
+                                        <td class="basket-item-name col-md-4">
+        <span class="">
+            Вентилятор канальный без примесей
+        </span>
+                                        </td>
+                                        <td class="xs-none col-md-2">
+                                            <div class="">
+                                                5 564.00 ₽
+                                            </div>
+
+                                        </td>
+                                        <td class="col-md-2 col-4">
+                                            <div class="form-group">
+                                                <div class="input-group bootstrap-touchspin focus">
+                <span class="input-group-prepend">
+                    <button class="btn btn-light bootstrap-touchspin-down"  v-on:click="item.quantity -= 1;quantityInput(index, item)"
+                            type="button">-</button>
+                </span>
+                                                    <input type="hidden"
+                                                           :name="'order_basket[' + index + '][ID]'" :value="item.id">
+                                                    <input type="hidden"
+                                                           :name="'order_basket[' + index + '][PRODUCT_ID]'" :value="item.product_id">
+                                                    <input type="text"
+                                                           class="form-control touchspin-empty"
+                                                           v-model="item.quantity"
+                                                           v-on:input="quantityInput(index, item)"
+                                                           type="number"
+                                                           :name="'order_basket[' + index + '][QUANTITY]'"
+                                                           :value="item.quantity">
+                                                    <span class="input-group-append">
+                    <button class="btn btn-light bootstrap-touchspin-up"
+                            v-on:click="item.quantity += 1;quantityInput(index, item)"
+                            type="button">+</button>
+                </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="basket-item-price col-md-2 col-8">
+                                            <div>
+                                                5 564.00 ₽
+                                            </div>
+                                        </td>
+                                        <td class="text-center basket-item-remove">
+                                            <div v-on:click="item.quantity = 0;quantityInput(index, item)" style="cursor: pointer">
+                                                <i class="icon mr-2">
+                                                    <img src="/local/templates/b2bcabinet_market/assets/images/icons_del.svg"
+                                                         alt="">
+                                                </i>
+                                            </div>
+                                        </td>
+                                    </tr>        </tbody>
+
+                                </table>
+                                <div class="row-under-modifications row-under-modifications-fixed" data-entity="basket-total-block">
+                                    <div class="checkout-total flex">
+                                        <div class="checkout-total-buttons">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex justify-content-between">
+                                    <strong>Итого:</strong>
+                                    <span class="xl-none">5 564.00 ₽</span>
+                                </h3>
+                                <div class="offer__list bootstrap">
+                                    <li class="row">
+                                        <b class="col-md-9 col-6"><span>Цена заказа (Общая стоимость товаров в заказе)</span></b>
+                                        <i class="col-md-2 col-6 js-order-price">
+                                            <strong>5 564.00 ₽</strong>
+                                        </i>
+                                    </li>
+
+
+                                    <li class="row index_checkout-table-summery">
+                                        <b class="col-md-9 col-6">
+                                            <span>Цена заказа                </span>
+                                        </b>
+                                        <i class="col-md-2 col-6 js-order-price"
+                                           data-price="5564">
+                                            <strong>
+                                                5 564.00 ₽
+                                            </strong>
+                                        </i>
+                                    </li>
+
+                                    <li v-if="orderData.show_individual_reqiest == 'Вкл' && orderData.individual_request_price && !isIndividualRequest">
+                                        <p>При заказе на сумму более
+                                            <strong></strong>
+                                            у вас будет право на индивидуальные условия поставки.
+                                        </p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header pl-0">
+                                    <h2 class="card-title d-flex justify-content-between">
+                                        Организация
+                                        <div class="card-title-info xl-none">
+                                            <a href="#" class="js-basket-warning">
+                                                <i class="icon">
+                                                    <img src="/local/templates/b2bcabinet/assets/images/icons_info.svg" alt="">
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div class="form-group row index_checkout-payer_type">
+                                    <div class="">
+                                        <div class="form-check disabled-mobile">
+                                            <label class="form-check-label js-change-profile"
+                                                   for="PROFILE_ID_124">
+                                                <input type="radio" class="form-input-styled"
+                                                       id="PROFILE_ID_124"
+                                                       name="PROFILE_ID"
+                                                       v-model="orderData.profile_id"
+                                                       @change="changedData"
+                                                       :checked="orderData.profile_id === '124'"
+                                                       value="124"
+                                                       checked="checked"                               >
+                                                ООО "ЛИРИКА"                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                <div class="card-body">
+                            <div class="card-header pl-0">
+                                <h2 class="card-title"><span>Доставка</span></h2>
+                            </div>
+                            <div class="form-group">
+                                <div class="index_checkout-delivery_type row">
+
+                                    <div class="delivery-dostavka col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label"
+                                                   for="ID_DELIVERY_ID_2">
+                                                <input type="radio"
+                                                       id="ID_DELIVERY_ID_2"
+                                                       v-model="orderData.shipment_id"
+                                                       :checked="orderData.shipment_id === '2'"
+                                                       name="DELIVERY_ID"
+                                                       value="2"
+                                                       type="radio"
+                                                       class="form-input-styled"
+                                                />
+                                                <span class="index_checkout-radios_title">Доставка</span><br>
+                                            </label>
+                                        </div>
+                                        <div class="index_checkout-delivery_text">
+                                            <div class="form-group"
+                                                 v-bind:class="{ focus: orderData.profiles[orderData.profile_id].address!=='' }">
+                                                <input type="hidden" name="order_properties[SELLER_COMPANY]"
+                                                       value="Гигастрой">
+                                                <textarea name="order_properties[ADDRESS]"
+                                                          :value="orderData.profiles[orderData.profile_id].address"
+                                                          class="form-control">101000, Г.Москва, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ БАСМАННЫЙ, УЛ ПОКРОВКА, Д. 31, СТР. 2, ЭТАЖ/ПОМЕЩ. 1/I, КОМ./ОФИС 1/1-1</textarea>
+                                                <label>Адрес доставки *</label>
+                                            </div>
+                                            <div class="index_checkout-radios_description-delivery index_checkout-radios_description">
+                                                <div class="input-group mt-20">
+                                                    <i class="icon">
+                                                        <img src="/local/templates/b2bcabinet/assets/images/icons_calendar.svg"
+                                                             alt="" style="top: 0;">
+                                                    </i>
+
+                                                    <label class="label-href">
+                                                        <!-- WANT_DELIVERY - самовывоз-->
+                                                        <!-- DELIVERY_DATE - доставка-->
+                                                        <span class="info info-left">
+                                        <span>Выберите желаемую дату <strong class="required-mark">*</strong></span>
+                                        <i>
+                                            <span class="info-content">
+                                                                                                      Датой поставки является дата, когда поставщик обеспечивает поступление всего заказанного товара в указанное покупателем место поставки,
+                                                     если иное не согласовано сторонами в примечаниях к спецификации, допускается досрочная поставка товара в любое время в период не менее 10 дней до дня указанной даты
+                                                                                             </span>
+                                        </i>
+                                    </span>
+                                                        <input type="text" readonly="readonly"
+                                                               class="calendar_delivery"
+                                                               v-model="orderData.delivery_date"
+                                                               name="delivery[2][DATE]"/>
+                                                    </label>
+                                                    <span
+                                                            class="index_checkout-radios_description">Стоимость доставки согласуется в ходе согласования заказа</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-samovyvoz col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label"
+                                                   for="ID_DELIVERY_ID_3">
+                                                <input type="radio"
+                                                       id="ID_DELIVERY_ID_3"
+                                                       v-model="orderData.shipment_id"
+                                                       :checked="orderData.shipment_id === '3'"
+                                                       name="DELIVERY_ID"
+                                                       value="3"
+                                                       type="radio"
+                                                       class="form-input-styled"
+                                                />
+                                                <span class="index_checkout-radios_title">Самовывоз</span><br>
+                                            </label>
+                                        </div>
+                                        <div class="index_checkout-delivery_text">
+                                            <div id="select_store">
+                                                <div class="input-group">
+                                                    <i class="icon">
+                                                        <img src="/local/templates/b2bcabinet/assets/images/icons_store2.svg"
+                                                             alt="" style="top: 0;">
+                                                    </i>
+                                                    <label class="label-href"
+                                                           v-on:click="showSelectStorePopup(3)">
+                                                        <span>Выберите склад</span>
+                                                    </label>
+                                                </div>
+                                                <span id="store_desc" class="delivery-store-title">
+                                                                                                                    123                                                                    </span>
+                                                <input id="BUYER_STORE" type="hidden" value="96"
+                                                       name="delivery[3][STORE]">
+                                                <br/>
+                                            </div>
+                                            <div class="index_checkout-radios_description-delivery index_checkout-radios_description">
+                                                <div class="input-group mt-20">
+                                                    <i class="icon">
+                                                        <img src="/local/templates/b2bcabinet/assets/images/icons_calendar.svg"
+                                                             alt="" style="top: 0;">
+                                                    </i>
+
+                                                    <label class="label-href">
+                                                        <!-- WANT_DELIVERY - самовывоз-->
+                                                        <!-- DELIVERY_DATE - доставка-->
+                                                        <span class="info info-left">
+                                        <span>Выберите желаемую дату <strong class="required-mark">*</strong></span>
+                                        <i>
+                                            <span class="info-content">
+                                                                                                      Датой самовывоза является дата, когда поставщик обеспечивает поступление всего заказанного товара в указанное покупателем место для самовывоза, если иное не согласовано сторонами в примечаниях к спецификации,
+                                                     товар должен быть доступен для самовывоза в период не менее 10 дней со дня указанной даты без взимания дополнительных платежей с покупателя.
+                                                                                             </span>
+                                        </i>
+                                    </span>
+                                                        <input type="text" class="calendar_want_delivery" readonly="readonly"
+                                                               name="order_properties[WANT_DELIVERY]"
+                                                               v-model="orderData.want_delivery"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                <div class="card-body">
+                            <div class="card-header pl-0">
+                                <h2 class="card-title info">
+                                    <span>Условия оплаты</span>
+                                    <i>
+                <span class="info-content">
+                    Система ограничивает вводимые значения условий поставки минимальным уровнем, иначе реальное заключение и исполнение договора будут затруднены, а именно: срок оплаты аванса и срок внесения гарантированного платежа исчисляются от даты заключения договора и составляют не менее пяти дней, дата поставки согласуется между Поставщиком и Покупателем в конкретном заказе, срок хранения гарантированного
+                    платежа не может составлять менее 30 дней от даты поставки, иначе можно будет не успеть получить гарантированный платеж.
+                </span>
+                                    </i>
+                                </h2>
+                            </div>
+                            <ul class="offer__list offer__list--full">
+                                <li>
+                                    <b class="info">
+                                        <span>Срок заключения договора</span>
+                                        <i>
+                <span class="info-content">
+                    Установлением указанного срока определяется дата заключения договора, при отсутствии заключенного договора в установленный срок заказ блокируется системой (эта мера необходима, чтобы избежать согласования неактуальных заказов),
+                    дата заключения договора определяется как последний день срока заключения договора
+                </span>
+                                        </i>
+                                    </b>
+                                    <i class="d-flex align-items-center">
+                <span class="form-group form-calendar mb-0 focus" v-if="isIndividualRequest">
+                    <input type="text" step="any" name="individual[ORDER_TERM]"
+                           class="form-control form-control-nolabel calendar_contract"
+                           readonly
+                           v-model="orderData.order_term"
+                           value="14.04.2023">
+                    <i></i>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    14.04.2023                </span>
+                                    </i>
+                                </li>
+
+                                <li v-if="orderData.profiles[orderData.profile_id].individual !== true">
+
+                                    <b class="info">
+                                        <span>Размер аванса</span>
+                                        <i>
+                <span class="info-content">
+                    Размер аванса устанавливается от цены заказа, то есть, от общей стоимости всех товаров в заказе без учета дополнительно согласованных Поставщиком и Покупателем расходов на доставку, страхование, различного рода сервисы и пр. (если таковые будут согласованы). Размер аванса не может быть больше 80% от цены заказа. Оплата аванса производится напрямую Поставщику по реквизитам выставленного счета на аванс.
+                </span>
+                                        </i>
+                                    </b>
+                                    <i class="d-flex align-items-center">
+                <span class="form-group mb-0 focus" v-if="isIndividualRequest">
+                    <input type="text" step="any" name="individual[PREPAYMENT_PERCENT]"
+                           class="form-control form-control-nolabel js-prepayment-percent"
+                           v-model="orderData.prepayment_percent"
+                           v-on:input="paymentCalculation('prepayment_percent')">
+                    <span class="form-control-absolute">%</span>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    {{orderData.prepayment_percent}} %
+                </span>
+
+                                    </i>
+                                </li>
+                                <li v-if="orderData.profiles[orderData.profile_id].individual !== true">
+                                    <b>
+                                        <span>Сумма аванса</span>
+                                    </b>
+                                    <i class="d-flex align-items-center">
+                <span class="form-group mb-0 focus" v-if="isIndividualRequest">
+                    <input type="text" step="any" name="individual[PREPAYMENT_SUM]"
+                           class="form-control form-control-nolabel js-prepayment-sum"
+                           v-model="orderData.prepayment_sum"
+                           v-on:input="paymentCalculation('prepayment_sum')">
+                    <span class="form-control-absolute ruble">₽</span>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    {{orderData.prepayment_sum}}
+                </span>
+                                    </i>
+                                </li>
+                                <li v-if="orderData.profiles[orderData.profile_id].individual !== true">
+                                    <b class="info">
+                                        <span>Срок оплаты аванса с даты заключения договора</span>
+                                        <i>
+                <span class="info-content">
+                    Срок оплаты аванса согласуется в количестве дней от даты, когда Поставщик и Покупатель должны заключить договор, если договор заключен ранее, то срок оплаты аванса на другую дату не переносится.
+                </span>
+                                        </i>
+                                    </b>
+                                    <i class="d-flex align-items-center">до
+                                        <span class="form-group form-calendar mb-0 focus" v-if="isIndividualRequest">
+                    <input type="text" step="any" name="individual[PREPAYMENT_TERM]"
+                           class="form-control form-control-nolabel calendar_avance"
+                           readonly
+                           @change="changedData"
+                           v-model="orderData.prepayment_term">
+                    <i></i>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    &nbsp;{{orderData.prepayment_term}}
+                </span>
+                                    </i>
+                                </li>
+                                <li>
+                                    <b class="info">
+                                        <span>Размер гарантированного платежа</span>
+                                        <i>
+                <span class="info-content">
+                    Размер гарантированного платежа устанавливается от цены заказа, то есть, от общей стоимости всех товаров в заказе без учета дополнительно согласованных Поставщиком и Покупателем расходов на доставку, страхование, различного рода сервисы и пр. (если таковые будут согласованы). Размер гарантированного платежа не может быть меньше 20% от цены заказа. Оплата гарантированного платежа производится на номинальный счет по реквизитам выставленного счета на гарантированный платеж.
+                </span>
+                                        </i>
+                                    </b>
+                                    <i v-if="orderData.profiles[orderData.profile_id].individual == true" class="d-flex align-items-center">
+                                        100 % от суммы договора
+                                        <input type="hidden" step="any" name="individual[SEQURED_PAYMENT_PERCENT]" value="100">
+
+                                    </i>
+                                    <i v-if="orderData.profiles[orderData.profile_id].individual !== true" class="d-flex align-items-center">
+                <span class="form-group mb-0 focus" v-if="isIndividualRequest">
+                    <input type="text" step="any" name="individual[SEQURED_PAYMENT_PERCENT]"
+                           class="form-control form-control-nolabel"
+                           v-model="orderData.sequred_payment_percent"
+                           v-on:input="paymentCalculation('sequred_payment_percent')">
+                    <span class="form-control-absolute">%</span>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    {{orderData.sequred_payment_percent}}
+                </span>
+                                    </i>
+                                </li>
+                                <li>
+                                    <b><span>Сумма гарантированного платежа</span></b>
+                                    <i class="d-flex align-items-center">
+                <span v-if="orderData.profiles[orderData.profile_id].individual == true">
+                    {{ obOrder.basket.price_formated }}
+                    <input type="hidden" name="individual[SEQURED_PAYMENT_SUM]"
+                           value="5564">
+                </span>
+                                        <span v-if="orderData.profiles[orderData.profile_id].individual !== true">
+                    <span v-if="isIndividualRequest" class="form-group mb-0 focus">
+                        <input type="text" step="any" name="individual[SEQURED_PAYMENT_SUM]"
+                               class="form-control form-control-nolabel js-sequred-payment-sum"
+                               v-model="orderData.sequred_payment_sum"
+                               v-on:input="paymentCalculation('sequred_payment_sum')">
+                        <span class="form-control-absolute ruble">₽</span>
+                    </span>
+                    <span v-if="!isIndividualRequest">
+                        {{orderData.sequred_payment_sum}}
+                    </span>
+                </span>
+
+
+                                    </i>
+                                </li>
+                                <li>
+                                    <b class="info">
+                                        <span>Срок внесения гарантированного платежа с даты заключения договора</span>
+                                        <i>
+                <span class="info-content">
+                    Срок внесения гарантированного платежа согласуется в количестве дней от даты, когда Поставщик и Покупатель должны заключить договор, если договор заключен ранее, то срок внесения гарантированного платежа на другую дату не переносится.
+                </span>
+                                        </i>
+                                    </b>
+                                    <i class="d-flex align-items-center">до
+                                        <span v-if="isIndividualRequest" class="form-group form-calendar mb-0 focus">
+                    <input type="text" step="any" name="individual[SEQURED_PAYMENT_TERM]"
+                           class="form-control form-control-nolabel calendar_secured"
+                           @change="changedData"
+                           readonly
+                           v-model="orderData.sequred_payment_term">
+                    <i></i>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    &nbsp;{{orderData.sequred_payment_term}}
+                </span>
+                                    </i>
+                                </li>
+                                <li>
+                                    <b class="info">
+                                        <span>Срок хранения гарантированного платежа от согласованной даты поставки</span>
+                                        <i>
+                <span class="info-content">
+                    Срок хранения гарантированного платежа определяется в согласованном между Поставщиком и Покупателем количестве дней от определенной в заказе даты поставки, в течение указанного срока средства гарантированного платежа хранятся на номинальном счете, а после истечения такого срока - в неиспользованной части возвращаются Покупателю
+                </span>
+                                        </i>
+                                    </b>
+                                    <i class="d-flex align-items-center">
+                <span v-if="isIndividualRequest" class="form-group mb-0 focus">
+                    <input type="text" step="any" name="individual[SEQURED_PAYMENT_TERM_PAY]"
+                           class="form-control form-control-nolabel"
+                           v-model="orderData.sequred_payment_term_pay"
+                           v-on:input="changedData">
+                    <span class="form-control-absolute">дней</span>
+                </span>
+                                        <span v-if="!isIndividualRequest">
+                    {{orderData.sequred_payment_term_pay}} дней
+                </span>
+                                    </i>
+                                </li>
+                            </ul>
+                        </div>
+                            <div class="card-body" v-if="orderData.profiles[orderData.profile_id].individual !== true">
+
+                                <div class="card-header pl-0">
+                                    <h2 class="card-title"><span>Подписание документов</span></h2>
+                                </div>
+                                <p class="info">
+                                    <strong>Документы подписываются:<span class="required-mark">*</span></strong>
+                                    <i>
+                <span class="info-content">
+                 Договор в любом случае является подписанным Стороной после ввода соответствующим Пользователем в меню подписания переданного Системой кода вне зависимости от условий дополнительных способов обмена договорными документами.
+                    Если дополнительно выбран «размещение в Системе сканов договорных документов» или «подписание квалифицированной электронной подписью» и одна Сторона по договору не выполнит обязанности по согласованному между ними дополнительному способу обмена договорными документами,
+                    то другая Сторона будет вправе до внесения Покупателем гарантированного платежа по такому договору отказаться от договора в одностороннем уведомительном порядке.
+                </span>
+                                    </i>
+                                </p>
+                                <div class="form-group">
+                                    <div class="form-check info">
+                                        <label class="form-check-label">
+                                            <input disabled type="checkbox" class="form-input-styled" checked="">
+                                            Подписание всех документов кодом через e-mail
+                                        </label>
+                                        <i>
+                        <span class="info-content">
+                            Подписание всех договорных документов кодом через e-mail обязательно по правилам Системы, помимо этого могут быть согласованы дополнительные способы обмена договорными документами, при этом договор является подписанным после ввода кода через e-mail.
+                        </span>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="row mt-20">
+                                    <div class="col-md-10">
+                                        <p>
+                                            <strong>Необходимость подписания текста договора:<span class="required-mark">*</span></strong>
+                                        </p>
+                                        <div class="checkout_radio">
+                                            <p class="form-check info">
+                                                <label class="form-check-label">
+                                                    <input class="form-input-styled js-agreement"
+                                                           type="radio"
+                                                           :disabled="orderData.disable_contract_specification"
+                                                           v-model="orderData.contract_necessity"
+                                                           value="достаточно оформления спецификации по заказу"
+                                                           name="individual[CONTRACT_NECESSITY]">
+                                                    Достаточно оформления спецификации по заказу
+                                                </label>
+                                                <i>
+                        <span class="info-content">
+                            Спецификация содержит все существенные условия договора, в связи с чем подписание обеими сторонами сделки Спецификации означает заключение договора. Подписание Спецификации является обязательным. Подписание текста договора обязательным не является, таковое осуществляется по согласованию сторон сделки, если они хотят урегулировать условия, дополняющие содержание Спецификации, например, условия о порядке приемки товара по качеству,
+                            о сервисной поддержке и гарантийных обязательствах, о порядке разрешения споров и т.п.
+                        </span>
+                                                </i>
+                                            </p>
+                                            <p class="form-check info">
+                                                <label class="form-check-label">
+                                                    <input class="form-input-styled js-agreement"
+                                                           type="radio"
+                                                           v-model="orderData.contract_necessity"
+                                                           value="необходимость оформления договора к спецификации по заказу"
+                                                           name="individual[CONTRACT_NECESSITY]">
+                                                    Необходимость подписания текста договора
+                                                </label>
+                                                <i>
+                        <span class="info-content">
+                            Типовой договор поставки является договором, к которому присоединяется «Покупатель, указанный в Спецификации». Типовой договор поставки не может содержать никаких условий отменяющих, изменяющих или умаляющих действие условий Спецификации, при наличии таковых действуют условия Спецификации, а соответствующие положения Типового договора поставки не подлежат применению.  В связи с этим рекомендуется в Типовой договор поставки включать условия, дополняющие содержание Спецификации, например,
+                            условия о порядке приемки товара по качеству, о сервисной поддержке и гарантийных обязательствах, о порядке разрешения споров и т.п.
+                        </span>
+                                                </i>
+                                            </p>
+                                        </div>
+                                        <div class="checkout_radio ml-20"
+                                             v-if="orderData.contract_necessity === 'необходимость оформления договора к спецификации по заказу'">
+                                            <p class="form-check info">
+                                                <label class="form-check-label">
+                                                    <input class="form-input-styled js-agreement"
+                                                           type="radio"
+                                                           v-model="orderData.contract_acceptance"
+                                                           value="принимается типовой договор"
+                                                           name="individual[CONTRACT_ACCEPTANCE]">
+                                                    принимается типовой <a href="" class="btn-download" data-fancybox>
+                                                    <span>договор поставщика</span>
+                                                    <img src="/local/templates/b2bcabinet/assets/images/icons_download.svg" alt="">
+                                                </a>
+                                                </label>
+                                                <i>
+                        <span class="info-content">
+                            Указанный выбор означает, что в Спецификации будет указано условие о присоединении Покупателя к типовому договору Поставки, то есть,
+                            такой договор будет распространяться на все правоотношения сторон по договору поставки, кроме прямо урегулированных Спецификацией случаев.
+                        </span>
+                                                </i>
+                                            </p>
+                                            <p class="form-check info">
+                                                <label class="form-check-label">
+                                                    <input class="form-input-styled js-agreement"
+                                                           type="radio"
+                                                           v-model="orderData.contract_acceptance"
+                                                           value="протокол разногласий к Типовому договору"
+                                                           name="individual[CONTRACT_ACCEPTANCE]">
+                                                    протокол разногласий к Типовому договору
+                                                </label>
+                                                <i>
+                        <span class="info-content">
+                            Указанный выбор означает, что в Спецификации будет указано условие о присоединении Покупателя к типовому договору Поставки с момента подписания обеими сторонами протокола разногласий к нему, то есть, такой договор будет распространяться на все правоотношения сторон по договору поставки,
+                            кроме прямо урегулированных Спецификацией и протоколом разногласий случаев.
+                        </span>
+                                                </i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body" id="order-terms" v-if="orderData.profiles[orderData.profile_id].individual !== true">
+                                <div class="card-header pl-0">
+                                    <h2 class="card-title info">
+                                        <span>Ответственность сторон</span>
+                                        <i>
+                <span class="info-content">
+                    Система и её Модератор не принимают участия в процессе взыскания штрафов и пени, так как определение виновности контрагентов не входит в их компетенцию.
+                </span>
+                                        </i>
+                                    </h2>
+                                </div>
+                                <ul class="offer__list offer__list--full">
+                                    <li>
+                                        <b class="info">
+                                            <span>Штраф за отказ поставщика от заключенной сделки</span>
+                                            <i>
+                <span class="info-content">
+                    Согласованный Сторонами «Штраф за отказ Поставщика от сделки» однократно взимается с Поставщика в случае,
+                    если Поставщик без предусмотренной договором поставки причины отказался от исполнения договора в одностороннем внесудебном порядке.
+                    Размер штрафа определяется от цены заказа.
+                </span>
+                                            </i>
+                                        </b>
+                                        <i class="d-flex align-items-center">
+                <span v-if="isIndividualRequest" class="form-group mb-0 focus">
+                    <input type="number" step=".01" name="individual[FINE_SUPPLIER_REFUSE]"
+                           class="form-control form-control-nolabel"
+                           v-model="orderData.fine_supplier_refuse"
+                           v-on:input="changedData">
+                    <span class="form-control-absolute">% от цены заказа</span>
+                </span>
+                                            <span v-if="!isIndividualRequest">
+                    1 % от цены заказа
+                </span>
+                                        </i>
+                                    </li>
+                                    <li>
+                                        <b class="info">
+                                            <span>Штраф за отказ покупателя от заключенной сделки</span>
+                                            <i>
+                <span class="info-content">
+                    Согласованный Сторонами «Штраф за отказ Покупателя от сделки» однократно взимается с Покупателя в случае,
+                    если Покупатель без предусмотренной договором поставки причины отказался от исполнения договора в одностороннем внесудебном порядке. Размер штрафа определяется от цены заказа.
+                </span>
+                                            </i>
+                                        </b>
+                                        <i class="d-flex align-items-center">
+                <span v-if="isIndividualRequest" class="form-group mb-0 focus">
+                    <input type="number" step=".01" name="individual[FINE_CUSTOMER_REFUSE]"
+                           class="form-control form-control-nolabel"
+                           v-model="orderData.fine_customer_refuse"
+                           v-on:input="changedData">
+                    <span class="form-control-absolute">% от цены заказа</span>
+                </span>
+                                            <span v-if="!isIndividualRequest">
+                    1 % от цены заказа
+                </span>
+                                        </i>
+                                    </li>
+                                    <li>
+                                        <b class="info">
+                                            <span>Пени за просрочку поставки</span>
+                                            <i>
+                <span class="info-content">
+                    Согласованные Сторонами «Пени за просрочку поставки» взимаются с Поставщика от общей стоимости недогруженной продукции за каждый день просрочки поставки по его вине.
+                </span>
+                                            </i>
+                                        </b>
+                                        <i class="d-flex align-items-center">
+                <span v-if="isIndividualRequest" class="form-group mb-0 focus">
+                    <input type="number" step=".01" name="individual[FINE_TERM]"
+                           class="form-control form-control-nolabel"
+                           v-model="orderData.fine_term"
+                           v-on:input="changedData">
+                    <span class="form-control-absolute">%</span>
+                </span>
+                                            <span v-if="!isIndividualRequest">
+                    1 %
+                </span>
+                                        </i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body" v-if="orderData.profiles[orderData.profile_id].individual !== true">
+                                <div class="card-header pl-0">
+                                    <h2 class="card-title"><span>Дополнительные условия</span></h2>
+                                </div>
+                                <div class="order-messages">
+                                    <ul class="offer__list">
+                                        <li>
+                                            <b>
+                    <span class="info">
+                        Комментарий
+                        <i>
+                            <span class="info-content">
+                                Поле «комментарий» необходимо для того, чтобы выставить в текст Спецификации дополнительные условия, которые стороны хотят согласовать, например, условия об упаковке товара, погрузке/выгрузке товара и пр.
+                            </span>
+                        </i>
+                    </span>
+                                            </b>
+                                            <i>
+                                                <div class="form-group mb-0">
+                                                    <div class="form-group">
+                                                        <label>Напишите текст</label>
+                                                        <textarea name="COMMENT"
+                                                                  class="form-control w-100"></textarea>
+                                                    </div>
+                                                </div>
+                                            </i>
+                                        </li>
+                                        <li>
+                                            <b>
+                    <span class="info">
+                        Прикрепленный файл
+                        <i>
+                            <span class="info-content">
+                                Поле «прикрепленный файл» необходимо для того, чтобы приложить в состав заказа необходимые документы, например доверенность или технические условия на товар,
+                                указанные документы будут импортированы в состав заказа и подписаны вместе со спецификацией.
+                            </span>
+                        </i>
+                    </span>
+                                            </b>
+                                            <i>
+                    <span class="form-group mb-0" style="width: 280px;">
+                                                <div class="adm-fileinput-wrapper ">
+<div class="adm-fileinput-btn-panel">
+	<span class="adm-btn add-file-popup-btn" id="bx_file_properties_file_more_photo_n_ind__317839_add"></span>
+	<div class="adm-fileinput-mode mode-pict" id="bx_file_properties_file_more_photo_n_ind__317839_mode">
+		<a href="#" class="mode-pict" id="bx_file_properties_file_more_photo_n_ind__317839ThumbModePreview" title="Показывать картинки"></a>
+		<a href="#" class="mode-file" id="bx_file_properties_file_more_photo_n_ind__317839ThumbModeNonPreview" title="Показывать иконки"></a>
+	</div>
+</div>
+<div id="bx_file_properties_file_more_photo_n_ind__317839_block" class="adm-fileinput-area   mode-pict ">
+	<div class="adm-fileinput-area-container" id="bx_file_properties_file_more_photo_n_ind__317839_container"></div>
+	<span class="adm-fileinput-drag-area-hint" id="bx_file_properties_file_more_photo_n_ind__317839Notice">Выберите файл на компьютере <br>или перетащите в это поле</span>
+<script>
+(function(BX)
+{
+	if (BX)
+	{
+		BX.ready(BX.defer(function(){
+			new BX.UI.FileInput('bx_file_properties_file_more_photo_n_ind__317839', {'upload':'YTozOntzOjI6ImlkIjtzOjQ6InBhdGgiO3M6MTE6ImFsbG93VXBsb2FkIjtzOjE6IkEiO3M6MTQ6ImFsbG93VXBsb2FkRXh0IjtzOjA6IiI7fQ==.c3e376df54e9fe07d778b0684ee8873b6d5bb048094d7222e9676237aabe47e9','uploadType':'path','medialib':false,'fileDialog':false,'cloud':false,'maxCount':'0','maxSize':'0','allowUpload':'A','allowUploadExt':'','allowSort':'Y','frameFiles':'N','pinDescription':'N','mode':'mode-pict','presets':[{'width':'200','height':'200','title':'200x200'}],'presetActive':'0','maxIndex':'0'}, {'name':'COMMENT_FILES[n#IND#]','description':true,'delete':true,'edit':true,'thumbSize':'640','id':'PROPERTIES_FILE_MORE_PHOTO_n#IND#_317839'}, [], '<div class=\"adm-fileinput-item\"><div class=\"adm-fileinput-item-preview\"><span class=\"adm-fileinput-item-loading\"><span class=\"container-loading-title\">Идёт загрузка...<\/span><span class=\"container-loading-bg\"><span class=\"container-loading-bg-progress\" style=\"width: 5%;\" id=\"#id#Progress\"><\/span><\/span><\/span><div class=\"adm-fileinput-item-preview-icon\"><div class=\"bx-file-icon-container-medium icon-#ext#\"><div class=\"bx-file-icon-cover\"><div class=\"bx-file-icon-corner\"><div class=\"bx-file-icon-corner-fix\"><\/div><\/div><div class=\"bx-file-icon-images\"><\/div><\/div><div class=\"bx-file-icon-label\"><\/div><\/div><span class=\"container-doc-title\" id=\"#id#Name\">#name#<\/span><\/div><div class=\"adm-fileinput-item-preview-img\">#preview#<\/div><input class=\"bx-bxu-fileinput-value\" type=\"hidden\" id=\"#id#Value\" name=\"COMMENT_FILES[n#IND#]\" value=\"\" /><\/div><input type=\"text\" id=\"#id#Description\" name=\"COMMENT_FILES_descr[n#IND#]\" value=\"#description#\" class=\"adm-fileinput-item-description\" /><div class=\"adm-fileinput-item-panel\"><span class=\"adm-fileinput-item-panel-btn adm-btn-setting\" id=\"#id#Edit\">&nbsp;<\/span><span class=\"adm-fileinput-item-panel-btn adm-btn-del\" id=\"#id#Del\">&nbsp;<\/span><\/div><div id=\"#id#Properties\" class=\"adm-fileinput-item-properties\"><\/div><\/div>');
+		}));
+	}
+})(window["BX"] || top["BX"]);
+</script>
+</div>
+</div>                        <script>
+                            var inpitFileId = jQuery("#bx_file_docs___input").next().find('.add-file-popup-btn').attr("id").replace("_add", "_input");
+                            jQuery("#bx_file_docs___input").attr("for", inpitFileId);
+                        </script>
+                    </span>
+                                            </i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>            </div>
+                        <div class="index_checkout-total summery-order summery-order-basket">
+                            <div class="d-flex align-items-center">
+                                <button name="save" value="Y" type="submit" id="ORDER_CONFIRM_BUTTON"
+                                        class="btn index_checkout-formalize_button">
+                                    Оформить заказ
+                                </button>
+                                <div class="summery-order-info d-flex">
+                                    <span class="xs-none">Всего в заказе</span>
+                                    <span class="js-basket-quantity c-primary"
+                                          data-quantity="1">1 позиция</span>
+                                    <span class="xs-none">На сумму</span>
+                                    <span class="c-primary">5&nbsp;564.00 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" v-if="jQuery.isEmptyObject(basket.items)">
+                        <div class="card-body index_checkout-table">
+                            <p>Ваша корзина пуста</p>
+                            <p><a style="color: #2E5599;" href="/b2bcabinet/orders/blank_zakaza/index.php">Нажмите
+                                здесь</a>,
+                                чтобы продолжить покупки</p>
+                        </div>
+                    </div>
+                </form>
+                <script>
+					function fShowStore(id, showImages, formWidth, siteId) {
+						var mapWidthDefault = 500;
+						var selectId = BX('BUYER_STORE');
+						var strUrl = '/local/templates/b2bcabinet/components/web2b/market.order.new/.default/map.php';
+						var strUrlPost = 'delivery=' + id + '&showImages=' + showImages + '&siteId=' + siteId +
+							(screen.width < mapWidthDefault ? '&map_w=' + (screen.width - 50) : '&map_w=' + mapWidthDefault) +
+							(selectId.value ? '&selectStore=' + selectId.value : '');
+
+						var wait = BX.showWait();
+						BX.ajax({
+							method: 'POST',
+							dataType: 'html',
+							url: strUrl,
+							data: strUrlPost,
+							skipAuthCheck: true,
+							onsuccess: function (data) {
+								BX.closeWait(null, wait);
+								$('#modal_map_content').html(data);
+								$("#modal_large").modal('show');
+							}
+						});
+
+					}
+
+					function GetBuyerStore() {
+						BX('BUYER_STORE').value = BX('POPUP_STORE_ID').value;
+						//BX('ORDER_DESCRIPTION').value = 'Пункт выдачи: '+BX('POPUP_STORE_NAME').value;
+						BX('store_desc').innerHTML = BX('POPUP_STORE_NAME').value;
+						BX.show(BX('select_store'));
+						$("#modal_large").modal('hide');
+						//submitForm();
+					}
+
+					function showExtraParamsDialog(deliveryId) {
+						var strUrl = '/local/templates/b2bcabinet/components/web2b/market.order.new/.default' + '/delivery_extra_params.php';
+						var formName = 'extra_params_form';
+						var strUrlPost = 'deliveryId=' + deliveryId + '&formName=' + formName;
+
+						if (window.BX.SaleDeliveryExtraParams) {
+							for (var i in window.BX.SaleDeliveryExtraParams) {
+								strUrlPost += '&' + encodeURI(i) + '=' + encodeURI(window.BX.SaleDeliveryExtraParams[i]);
+							}
+						}
+
+						var paramsDialog = new BX.CDialog({
+							'title': 'Дополнительные параметры для доставки',
+							head: '',
+							'content_url': strUrl,
+							'content_post': strUrlPost,
+							'width': 500,
+							'height': 200,
+							'resizable': true,
+							'draggable': false
+						});
+
+						var button = [
+							{
+								title: 'Сохранить',
+								id: 'saleDeliveryExtraParamsOk',
+								'action': function () {
+									insertParamsToForm(deliveryId, formName);
+									BX.WindowManager.Get().Close();
+								}
+							},
+							BX.CDialog.btnCancel
+						];
+
+						paramsDialog.ClearButtons();
+						paramsDialog.SetButtons(button);
+						//paramsDialog.adjustSizeEx();
+						paramsDialog.Show();
+					}
+
+					function insertParamsToForm(deliveryId, paramsFormName) {
+						var orderForm = BX("ORDER_FORM"),
+							paramsForm = BX(paramsFormName);
+						wrapDivId = deliveryId + "_extra_params";
+
+						var wrapDiv = BX(wrapDivId);
+						window.BX.SaleDeliveryExtraParams = {};
+
+						if (wrapDiv)
+							wrapDiv.parentNode.removeChild(wrapDiv);
+
+						wrapDiv = BX.create('div', {props: {id: wrapDivId}});
+
+						for (var i = paramsForm.elements.length - 1; i >= 0; i--) {
+							var input = BX.create('input', {
+									props: {
+										type: 'hidden',
+										name: 'DELIVERY_EXTRA[' + deliveryId + '][' + paramsForm.elements[i].name + ']',
+										value: paramsForm.elements[i].value
+									}
+								}
+							);
+
+							window.BX.SaleDeliveryExtraParams[paramsForm.elements[i].name] = paramsForm.elements[i].value;
+
+							wrapDiv.appendChild(input);
+						}
+
+						orderForm.appendChild(wrapDiv);
+
+						BX.onCustomEvent('onSaleDeliveryGetExtraParams', [window.BX.SaleDeliveryExtraParams]);
+					}
+
+					if (typeof UniformInit !== "undefined") {
+						UniformInit.initComponents();
+					}
+                </script>
+                <script>
+					BX.Currency.setCurrencyFormat('RUB', {'CURRENCY':'RUB','LID':'ru','FORMAT_STRING':'# ₽','FULL_NAME':'Российский рубль','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':'2','THOUSANDS_VARIANT':'B','HIDE_ZERO':'N','CREATED_BY':'','DATE_CREATE':'2020-06-22 14:32:38','MODIFIED_BY':'1','TIMESTAMP_X':'2022-11-21 02:10:31','TEMPLATE':{'SINGLE':'# ₽','PARTS':['#',' ₽'],'VALUE_INDEX':'0'}});
+					var vueOrderSpecification = orderSpecificationInit({"discount_percent":0,"discount":0,"items":{"86150":{"id":"1972","product_id":"86150","name":"\u0412\u0435\u043d\u0442\u0438\u043b\u044f\u0442\u043e\u0440 \u043a\u0430\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0431\u0435\u0437 \u043f\u0440\u0438\u043c\u0435\u0441\u0435\u0439","image":null,"base_price":5564,"price":5564,"quantity":1,"measure":"\u0448\u0442","status":"in_order","vat":"0.0000","history":{"quantity":"","price":""}}},"removed":{}}, {"company_id":"85912","order_term":"14.04.2023","prepayment_percent":"80","prepayment_sum":4451.2,"prepayment_sum_formated":"4&nbsp;451.20 \u20bd","prepayment_term":"19.04.2023","sequred_payment_percent":"20","sequred_payment_sum":1112.8,"sequred_payment_sum_formated":"1&nbsp;112.80 \u20bd","sequred_payment_term":"19.04.2023","sequred_payment_term_pay":"5","contract_necessity":"","contract_acceptance":"","fine_term":"1","fine_supplier_refuse":"1","fine_customer_refuse":"1","profiles":{"124":{"id":"124","name":null,"individual":false,"person_type_id":"2","address":"101000, \u0413.\u041c\u043e\u0441\u043a\u0432\u0430, \u0412\u041d.\u0422\u0415\u0420.\u0413. \u041c\u0423\u041d\u0418\u0426\u0418\u041f\u0410\u041b\u042c\u041d\u042b\u0419 \u041e\u041a\u0420\u0423\u0413 \u0411\u0410\u0421\u041c\u0410\u041d\u041d\u042b\u0419, \u0423\u041b \u041f\u041e\u041a\u0420\u041e\u0412\u041a\u0410, \u0414. 31, \u0421\u0422\u0420. 2, \u042d\u0422\u0410\u0416\/\u041f\u041e\u041c\u0415\u0429. 1\/I, \u041a\u041e\u041c.\/\u041e\u0424\u0418\u0421 1\/1-1"}},"logo":"23923","name":"\u0413\u0438\u0433\u0430\u0441\u0442\u0440\u043e\u0439","logo_b2b":"","type_store_market":"","is_popular":"","is_active":"","is_offer":"","is_catalog_moderate":"","catalog_file":"","callpy_id":"","ym_login":"","ym_key":"","staff":false,"cm_api_key":"","cm_access_type":"","individual_reqiest_price":"","show_individual_reqiest":"","payment_terms":"","show_payment_terms":"","iblock_id":"","company_name":"\u0413\u0438\u0433\u0430\u0441\u0442\u0440\u043e\u0439","account":"22222222222222222222","correspondent_account":"23333333333333333333","bank":"\u0411\u0430\u043d\u043a \u0432 \u0444\u0430\u043d\u0442\u0430\u0437\u0438\u0438","bik":"111111111","address":"\u041b\u0443\u043a\u043e\u043c\u043e\u0440\u044c\u0435, \u0434\u0443\u0431 \u0434.10","director":"\u041c\u0430\u043a\u0441\u0438\u043c","licences":false,"docs_contract":"","catalog_section_id":"5375","position":"\u043d\u0435\u0437\u043d\u0430\u0439\u043a\u0430","inn":"111111111111","kpp":"111111111","ogrn":"222222222222222","skype_company":"","main_office_manager":"\u041c\u0430\u043a\u0441\u0438\u043c","main_phone":"+7 999 999-99-99","main_email":"ovxego@mailto.plus","company_address":"\u041b\u0443\u043a\u043e\u043c\u043e\u0440\u044c\u0435, \u0434\u0443\u0431 \u0434.10","logo_dark":"","site":"","vk":"","facebook":"","instagramm":"","youtube":"","activity":"","direction":"","category_spec":"","bill":"","contract_example":"","about_header":"","about_on":"","catalog_header":"","catalog_on":"","materials_header":"","materials_on":"","access_info":"","phone":"+7 999 999-99-99","email":"ovxego@mailto.plus","show_webcast":"","name_webcast":"","access_webcast":"","show_product":"","name_product":"","access_product":"","show_presentation":"","name_presentation":"","access_presentation":"","show_team":"","name_team":"","access_team":"","vat_included":"","docs_sign":false,"e_signature":"","prepayment_days_valid_offer":"3","prepayment_days_advance":"5","prepayment_required_payment_percent":"20","prepayment_date_offer_pay":"5","prepayment_date_blocking":"5","prepayment_fine_seller_fault":"1","prepayment_fine_buyer_fault":"1","prepayment_fine_delay_delivery":"1","commission_partner":"","commission_partner_second":"","commission_partner_second_summ":"","commission_partner_third":"","user":485,"individual_request_price":"","profile_id":"124","shipment_id":"3","store_id":"","shipmentList":{"2":{"PRICE":0,"PRICE_FORMATED":"0.00 \u20bd","ID":"2","NAME_SERVICE":"\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0430","NAME":"\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0430","OWN_NAME":"\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0430","DESCRIPTION":"\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u0441\u043e\u0433\u043b\u0430\u0441\u0443\u0435\u0442\u0441\u044f \u0432 \u0445\u043e\u0434\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u043e\u0432\u0430\u043d\u0438\u044f \u0437\u0430\u043a\u0430\u0437\u0430","FIELD_NAME":"DELIVERY_ID","CURRENCY":"RUB","SORT":"100","EXTRA_SERVICES":{},"STORE_LIST":{},"STORE_ID":0,"DATE":"30.06.2022"},"3":{"PRICE":0,"PRICE_FORMATED":"0.00 \u20bd","ID":"3","NAME_SERVICE":"\u0421\u0430\u043c\u043e\u0432\u044b\u0432\u043e\u0437","NAME":"\u0421\u0430\u043c\u043e\u0432\u044b\u0432\u043e\u0437","OWN_NAME":"\u0421\u0430\u043c\u043e\u0432\u044b\u0432\u043e\u0437","DESCRIPTION":"","FIELD_NAME":"DELIVERY_ID","CURRENCY":"RUB","SORT":"200","EXTRA_SERVICES":{},"STORE_LIST":{"0":"1"},"STORE_ID":0,"DATE":"30.06.2022"}},"want_delivery":"","delivery_date":""});
+                </script>
+
+                <!-- Basic modal -->
+                <div id="modal_large" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Пункты выдачи заказа</h5>
+                                <button type="button" class="close" data-dismiss="modal"></button>
+                            </div>
+                            <div id="modal_map_content" class="modal-body-issue_point">
+                            </div>
+                            <div class="modal-footer popup-window-buttons">
+                                <div class="popup-window-buttons_btns">
+                                    <button
+                                            id="crmOk"
+                                            name="crmOk"
+                                            type="button"
+                                            class="btn btn_save"
+                                            onclick="GetBuyerStore();">
+                                        Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /basic modal -->
+
+            </div>
+
+        </div>
+    </div>
+    <!-- /Main content -->
+</div>
+<!-- Content area -->
+<footer>
+    <div class="footer-contento d-flex">
+        <div class="footer-contento-left">
+            <img src="/local/templates/b2bcabinet/assets/images/stroymarket-logo.png" alt="">
+        </div>
+        <div class="footer-contento-right">
+            <nav class="footer-contento-menu">
+                <ul>
+                    <li>
+                        <a href="/include/files/agreement.pdf"  class="foot__link">Публичная
+                            оферта</a>
+                    </li>
+                    <li>
+                        <a href="/include/files/policy.pdf"  class="foot__link">Политика
+                            конфиденциальности</a>
+                    </li>
+                    <li><a href="mailto:info@web2b.co">info@web2b.co</a></li>
+                    <li><a href="tel:+78001006599">+7 (800) 100-65-99 </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<!-- /Page content -->
+<div style="display: none" class="modal__white popup_user_info" id="js-user-popup">
+    <ul>
+        <li class="form__user--name">
+            <img src="/local/templates/b2bcabinet/assets/images/icons_profile.svg" alt="">
+            <span>
+                Слава Викторов            </span>
+        </li>
+        <li>
+            <a href="/b2bcabinet/personal/index.php">Профиль</a>
+        </li>
+        <hr>
+        <li>
+            <img src="/local/templates/b2bcabinet/assets/images/icons_expo.svg" alt="">
+            <a href="//stroymarket.https://stroymarket.su" class="navbar__action__favorite" >
+                Перейти в экспомаркет
+            </a>
+        </li>
+        <hr>
+        <li>
+            <img src="/local/templates/b2bcabinet/assets/images/logout.svg" alt="">
+            <a href="?logout=yes" class="navbar__action__profile">
+                Выход
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+	function handler(e){
+		var Request = new XMLHttpRequest();
+		var params = 'query='+e.target.value;
+		Request.open("GET", '/bitrix/admin/checkcompany_ajax.php?' + params, true);
+		Request.onreadystatechange = function() {
+			if (this.readyState != 4) return;
+			if(this.responseText === "") return;
+			var data = JSON.parse(this.responseText);
+			if(data){
+				var ul = document.createElement("ul");
+				ul.style.margin = "0px";
+				ul.style.width = e.target.style.width;
+				ul.style.position = "absolute";
+				ul.style.zIndex = "9999";
+				ul.style.background = "#fff";
+				var list = document.getElementById("list");
+				if(list){
+					list.remove();
+				}
+				ul.setAttribute("id", "list");
+				var style = document.createElement('style');
+				style.type = 'text/css';
+				var h = '#list li:hover p {color:#f00}';
+				var hover = document.createTextNode(h);
+				var head = document.getElementsByTagName('head')[0];
+				style.appendChild(hover);
+				head.appendChild(style);
+				data.forEach(function(value, index){
+					var item = document.createElement("li");
+					item.style.listStyle = "none";
+					item.style.padding = "5px 10px";
+					item.style.zIndex = "9999";
+					item.setAttribute("data-index", index);
+					if(value.inn === e.target.value){
+						setInfo(value);
+						return;
+					}
+					item.onclick = function(e){
+						var list = document.getElementById("list");
+						if(list){
+							list.remove();
+						}
+						setInfo(data[e.target.getAttribute("data-index")]);
+					}
+					var p = document.createElement("p");
+					p.style.margin = "0px";
+					p.innerHTML = value.company_name;
+					var p2 = document.createElement("p");
+					p2.innerHTML = value.inn+" "+value.address;
+					p.setAttribute("data-index", index);
+					p2.setAttribute("data-index", index);
+					item.append(p);
+					item.append(p2);
+
+					ul.append(item);
+				});
+				e.target.after(ul);
+			}
+		}
+		Request.send();
+	}
+	function setInfo(info)
+	{
+		var inn_id = {"2":"10","3":"23"};
+		var fields = {"2":{"inn":{"ID":"10","CODE":"INN"},"kpp":{"ID":"11","CODE":"KPP"},"ogrn":{"ID":null,"CODE":""},"company":{"ID":"8","CODE":"COMPANY"},"company_adr":{"ID":"9","CODE":"COMPANY_ADR"},"location":{"ID":"18","CODE":"LOCATION"},"address":{"ID":"19","CODE":"ADDRESS"},"f":{"ID":"12","CODE":"CONTACT_PERSON"},"i":{"ID":null,"CODE":""},"o":{"ID":null,"CODE":""},"main":{"ID":"10","CODE":"INN"}},"3":{"inn":{"ID":"23","CODE":"INN"},"kpp":{"ID":"24","CODE":"KPP"},"ogrn":{"ID":null,"CODE":""},"company":{"ID":"20","CODE":"NAME"},"company_adr":{"ID":null,"CODE":"COMPANY_ADR"},"location":{"ID":"31","CODE":"LOCATION"},"address":{"ID":"22","CODE":"ADDRESS"},"f":{"ID":"25","CODE":"CONTACT_NAME"},"i":{"ID":null,"CODE":""},"o":{"ID":null,"CODE":""},"main":{"ID":"23","CODE":"INN"}}};
+		var data_fields ="";
+		var pType = "";
+
+
+		for (var personType in inn_id)
+		{
+			var element =  document.querySelector('input[name = ORDER_PROP_'+inn_id[personType]+']');
+			if(!element)
+			{
+
+				var ratio = document.getElementsByClassName("REGISTER_WHOLESALER_TYPE");
+				for (i = 0; i < ratio.length; ++i)
+				{
+					if(ratio[i].checked && ratio[i].value == personType)
+					{
+						var element =
+							document.querySelector('input[name = "REGISTER_WHOLESALER_OPT['+personType+']['+fields[personType]["main"]["CODE"]+']"]');
+					}
+				}
+			}
+
+			if(element){
+				data_fields = fields[personType];
+				pType = personType;
+			}
+		}
+
+		var company = document.querySelector('input[name=ORDER_PROP_'+data_fields.company.ID+']');
+		if(!company)
+		{
+			var company = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.company.CODE+']"]');
+		}
+
+		var inn = document.querySelector('input[name=ORDER_PROP_'+data_fields.inn.ID+']');
+		if(!inn)
+		{
+			var inn = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.inn.CODE+']"]');
+		}
+
+		var kpp = document.querySelector('input[name=ORDER_PROP_'+data_fields.kpp.ID+']');
+		if(!kpp)
+		{
+			var kpp = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.kpp.CODE+']"]');
+		}
+
+		var ogrn = document.querySelector('input[name=ORDER_PROP_'+data_fields.ogrn.ID+']');
+		if(!ogrn)
+		{
+			var ogrn = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.ogrn.CODE+']"]');
+		}
+
+		var address = document.querySelector('input[name=ORDER_PROP_'+data_fields.address.ID+']');
+		if(!address){
+			address = document.querySelector('textarea[name=ORDER_PROP_'+data_fields.address.ID+']');
+		}
+		if(!address)
+		{
+			var address = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.address.CODE+']"]');
+		}
+		var company_adr = document.querySelector('input[name=ORDER_PROP_'+data_fields.company_adr.ID+']');
+		var location = document.querySelector('input[name=ORDER_PROP_'+data_fields.location.ID+']');
+		var f = document.querySelector('input[name=ORDER_PROP_'+data_fields.f.ID+']');
+		if(!f)
+		{
+			var f = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.f.CODE+']"]');
+		}
+
+		var i = document.querySelector('input[name=ORDER_PROP_'+data_fields.i.ID+']');
+		if(!i)
+		{
+			var i = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.i.CODE+']"]');
+		}
+
+		var o = document.querySelector('input[name=ORDER_PROP_'+data_fields.o.ID+']');
+		if(!o)
+		{
+			var o = document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+pType+']['+data_fields.o.CODE+']"]');
+		}
+
+		if(info.company_name && company)  company.value = info.company_name;
+		if(info.inn && inn)inn.value = info.inn;
+		if(info.kpp && kpp) kpp.value = info.kpp;
+		if(info.ogrn && ogrn)  ogrn.value = info.ogrn;
+		if(info.address && address) address.value = info.address;
+		if(info.address && company_adr) company_adr.value = info.address;
+		if(info.address && location) location.value = info.address;
+
+		if(info.name !== null){
+			var fio = info.name.split(" ");
+			if(fio[0] && f)  f.value = info.name; // контактное лицо
+			if(fio[1] && i)  i.value = fio[1];
+			if(fio[2] && o) o.value = fio[2];
+		}
+	}
+	function hideList(){
+		setTimeout(function(){
+			var list = document.getElementById("list");
+			if(list){
+				list.remove();
+			}
+		}, 1000)
+	}
+	function readyPage(){
+		var inn_id = {"2":"10","3":"23"};
+		var fields = {"2":{"inn":{"ID":"10","CODE":"INN"},"kpp":{"ID":"11","CODE":"KPP"},"ogrn":{"ID":null,"CODE":""},"company":{"ID":"8","CODE":"COMPANY"},"company_adr":{"ID":"9","CODE":"COMPANY_ADR"},"location":{"ID":"18","CODE":"LOCATION"},"address":{"ID":"19","CODE":"ADDRESS"},"f":{"ID":"12","CODE":"CONTACT_PERSON"},"i":{"ID":null,"CODE":""},"o":{"ID":null,"CODE":""},"main":{"ID":"10","CODE":"INN"}},"3":{"inn":{"ID":"23","CODE":"INN"},"kpp":{"ID":"24","CODE":"KPP"},"ogrn":{"ID":null,"CODE":""},"company":{"ID":"20","CODE":"NAME"},"company_adr":{"ID":null,"CODE":"COMPANY_ADR"},"location":{"ID":"31","CODE":"LOCATION"},"address":{"ID":"22","CODE":"ADDRESS"},"f":{"ID":"25","CODE":"CONTACT_NAME"},"i":{"ID":null,"CODE":""},"o":{"ID":null,"CODE":""},"main":{"ID":"23","CODE":"INN"}}};
+		for (var personType in inn_id)
+		{
+			var element =  document.querySelector('input[name=ORDER_PROP_'+inn_id[personType]+']');
+			if(!element)
+			{
+				var element =
+					document.querySelector('input[name="REGISTER_WHOLESALER_OPT['+personType+']['+fields[personType]["main"]["CODE"]+']"]');
+			}
+			if(element){
+				element.oninput = handler;
+				element.addEventListener("blur", hideList);
+			}
+		}
+	}
+	BX.addCustomEvent('onAjaxSuccess', readyPage);
+	document.addEventListener("DOMContentLoaded", readyPage);
+</script>

@@ -1,0 +1,46 @@
+.page-add-services {
+	display: grid;
+	grid-template-columns: 1fr 255px;
+	background: #FFFFFF;
+	border: 1px solid #E2E2E2;
+	border-radius: 4px;
+	// padding: 40px 0 40px 40px;
+	h3 {
+		line-height: 22px;
+	}
+	&__price {
+		padding: 24px 40px;
+		background: #F7F3F1;
+		border-left: 1px solid #E2E2E2;
+		font-size: 40px;
+		color: #000;
+
+		span {
+			font-size: 14px;
+			display: block;
+			line-height: 16px;
+			color: #737373;
+			margin-bottom: 4px;
+		}
+		&-btn {
+			margin-top: 12px;
+			background: #CB3300;
+			border-radius: 4px;
+			padding: 14px 16px;
+			border: none;
+			width: 100%;
+			display: block;
+			color: #fff;
+			cursor: pointer;
+			&:hover {
+				opacity: .8;
+			}
+
+
+		}
+	}
+
+	&__descr {
+		padding: 24px 40px;
+	}
+}

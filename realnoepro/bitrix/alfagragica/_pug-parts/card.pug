@@ -1,0 +1,363 @@
+
+- var class_name = 'header'
+header(class=`${class_name} container`)
+	//- ряд
+	div(class=`${class_name}__main`)
+
+		a(class=`${class_name}__main-logo`)
+			img(class='logo' src='assets/img/front/logo-top.png' alt=`#`)
+
+		div(class=`${class_name}__main-adress` data-da = 'nav-header, last, 800') Нижний Новгород, ул. Совхозная, 13к4
+
+		div(class=`${class_name}__main-email` data-da = 'nav-header, last, 991')
+			div(class=`${class_name}__main-email-box`)
+				p Электронная почта:
+				a(href='mail:alfagrafica@mail.ru') alfagrafica@mail.ru
+
+		div(class=`${class_name}__main-phone` data-da = 'nav-header, last, 490')
+			div(class=`${class_name}__main-phone-box`)
+				a(href='tel:+7312123707' ) +7 (831) 212-37-07
+				a(class="callback" data-toggle="modal" href="" data-path = 'two-dom') заказать звонок
+	//- menu
+	div.nav-header__block
+		div(class=`${class_name}__container`)
+			div(class='burger' data-burger='nav-header')
+				span
+			nav.nav-header
+				ul
+					li
+						a(href='') О нас
+					li
+						a(href='') Каталог сувениров
+					li
+						a(href='') Полигрофия
+					li
+						a(href='') Портфолио
+					li
+						a(href='') Отзывы
+					li
+						a(href='') Контакты
+					li
+						a(href='') Коммерческое предложение
+
+
+	//- ряд
+	div(class=`${class_name}__search`)
+		div(class=`${class_name}__search-cat`)
+			button(class='btn') Каталог
+			| <div class="hidden-menu hide">
+			| <div class="hidden-menu-wrap">
+			| <div class="menu-column">
+			| <div class="item-new"><a href="/catalog/types/?type=new">Новинки</a></div><br>
+			| <div class="item-hit"><a href="/catalog/types/?type=hit">Хиты продаж</a></div>	<br>
+			| <div class="item-sale"><a href="/catalog/types/?type=sale">Распродажа</a></div>	<br>
+			| <div class="subtitle"><a href="/catalog/ezhednevniki-bloknoti/">Ежедневники и бизнес-блокноты с логотипом</a></div>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/enote/">Enote eжедневники</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/ezhednevniki-a5/">Ежедневники А5</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/thinkme_delovye_bloknoty/">thINKme - деловые блокноты</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/bruno_viskonti/">Bruno Viskonti</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/bruno_viskonti/bloknoty/">&nbsp;&nbsp;&nbsp;Блокноты для записей</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/bruno_viskonti/ezhednevniki/">&nbsp;&nbsp;&nbsp;Ежедневники</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/bruno_viskonti/ezhenedelniki-planingi/">&nbsp;&nbsp;&nbsp;Еженедельники, планинги</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/happy-gifts-1/">Happy-gifts</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/portobello-ezh/">Portobello</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/alt/">Блокноты и планинги</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/alt/bloknoti/">&nbsp;&nbsp;&nbsp;Блокноты</a>
+			| <a class="menu-item-must-hide" href="/catalog/ezhednevniki-bloknoti/alt/planingi/">&nbsp;&nbsp;&nbsp;Планинги</a>
+			| <div class="subtitle"><a href="/catalog/ruchki-karandashi/">Ручки и карандаши</a></div>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/vip-ruchki/">VIP ручки</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/plastikovye-ruchki/">Пластиковые ручки</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/plastikovye-ruchki/happy-gifts/">&nbsp;&nbsp;&nbsp;Happy gifts</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/plastikovye-ruchki/viva/">&nbsp;&nbsp;&nbsp;Viva</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/plastikovye-ruchki/leche-pen/">&nbsp;&nbsp;&nbsp;Lecce Pen</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/plastikovye-ruchki/maxema/">&nbsp;&nbsp;&nbsp;MAXEMA</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/plastikovye-ruchki/neopen/">&nbsp;&nbsp;&nbsp;NeoPen</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/ruchki-iz-metalla/">Металлические ручки</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/ruchki-iz-metalla/happy-giftc/">&nbsp;&nbsp;&nbsp;Happy gifts</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/ruchki-iz-metalla/portobello/">&nbsp;&nbsp;&nbsp;Portobello</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/ruchki-iz-metalla/b1/">&nbsp;&nbsp;&nbsp;Ручки B1 из металла</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/eko-ruchki/">Эко-ручки</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/nabory-i-futlyary/">Наборы и футляры</a>
+			| <a class="menu-item-must-hide" href="/catalog/ruchki-karandashi/karandashi/">Карандаши и наборы карандашей</a>
+			| <div class="subtitle"><a href="/catalog/promo-odezhda/">Промо-одежда</a></div>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/beysbolki/">Бейсболки</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/vetrovki-kurtki-zhilety/">Ветровки, куртки, жилеты</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/vetrovki-kurtki-zhilety/detskie/">&nbsp;&nbsp;&nbsp;Детские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/vetrovki-kurtki-zhilety/zhenckie/">&nbsp;&nbsp;&nbsp;Женские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/vetrovki-kurtki-zhilety/muzhckie/">&nbsp;&nbsp;&nbsp;Мужские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/dozhdeviki/">Дождевики</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/noski/">Носки</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/polotentsa/">Полотенца</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/rubashki/">Рубашки</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/rubashki/zhenskye/">&nbsp;&nbsp;&nbsp;Женские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/rubashki/muzhskye/">&nbsp;&nbsp;&nbsp;Мужские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/tolstovki/">Толстовки</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/tolstovki/detskue/">&nbsp;&nbsp;&nbsp;Детские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/tolstovki/zhenckie/">&nbsp;&nbsp;&nbsp;Женские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/tolstovki/muzhckye/">&nbsp;&nbsp;&nbsp;Мужские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/futbolki/">Футболки</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/futbolki/detskye/">&nbsp;&nbsp;&nbsp;Детские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/futbolki/zhenskue/">&nbsp;&nbsp;&nbsp;Женские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/futbolki/muzhskue/">&nbsp;&nbsp;&nbsp;Мужские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/shapki-sharfy-perchatki/">Шапки, шарфы, перчатки</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/polo/">Поло</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/polo/polo_zhenskie/">&nbsp;&nbsp;&nbsp;Женские</a>
+			| <a class="menu-item-must-hide" href="/catalog/promo-odezhda/polo/polo_muzhskie/">&nbsp;&nbsp;&nbsp;Мужские</a>
+			| <div class="subtitle"><a href="/catalog/sumki/">Сумки и рюкзаки</a></div>
+			| <a class="menu-item-must-hide" href="/catalog/sumki/konferents-sumki/">Конференц-сумки</a>
+			| <a class="menu-item-must-hide" href="/catalog/sumki/ryukzaki/">Рюкзаки</a>
+			| <a class="menu-item-must-hide" href="/catalog/sumki/sumki-dlya-pokupok/">Сумки для  покупок</a>
+			| </div>
+			| <div class="clearfix"></div>
+			| </div>
+			| </div>
+		form
+			.placeholder-container.placeholder-container__input
+				input(type=`text` name="nameUser")
+				div(class='caption') Поиск по сайту
+
+			button(class='btn') <span>Найти</span>
+
+//- screen-name
+- var section = 'page-card'
+
+section(class=`page  ${section}`)
+	div(class=`${section}__container`)
+		div(class=`breadcramps`)
+			a(href='/') Каталог
+			a(href='/') Каталог сувенирной продукции
+			span Ручки и карандаши
+		h1 ELLE, ручка шариковая
+		div(class=`${section}__article`) Артикул 182/77/01
+
+
+		- var row = `${section}__row`
+		div(class=`${row}`)
+
+			//- правая колонка
+			- var column = `${row}-left`
+			div(class=`${column}`)
+				- var class_slider = 'page-map-slider'
+
+				div(class=`${class_slider}-main swiper-container`)
+					div(class=`swiper-wrapper`)
+
+						mixin item(img)
+							div(class=`${class_slider}-main-slide swiper-slide`)
+								img(src=`https://www.alfagrafika.ru/upload/iblock/a7f/61998a05-2779-11e8-9438-00155d640301.jpg` alt=`#`)
+
+						+item('1', '', '')
+						+item('2', '', '')
+						+item('3', '', '')
+
+
+
+				div(class=`${class_slider}-nav`)
+					div(class='swiper-wrapper')
+						div(class=` ${class_slider}-nav-slide swiper-slide`)
+							img(src=`https://www.alfagrafika.ru/upload/iblock/a7f/61998a05-2779-11e8-9438-00155d640301.jpg` alt=`#`)
+						div(class=` ${class_slider}-nav-slide swiper-slide`)
+							img(src=`https://www.alfagrafika.ru/upload/iblock/a7f/61998a05-2779-11e8-9438-00155d640301.jpg` alt=`#`)
+						div(class=` ${class_slider}-nav-slide swiper-slide`)
+							img(src=`https://www.alfagrafika.ru/upload/iblock/a7f/61998a05-2779-11e8-9438-00155d640301.jpg` alt=`#`)
+
+
+			//- правая колонка
+			- var column = `${row}-right`
+			div(class=`${column}`)
+				h3 Подробное описание:
+				p Утонченная ручка Elle имеет плавную трехгранную форму - это позволяет получить большую площадь под нанесение при относительно небольшом диаметре корпуса.
+				p Европейский стержень X-20, синий <br> Толщина пишущего узла 1 мм.Немецкие чернила Dokumental <br> Европейский ABS-пластик
+				h3(class='underlined') Подробнее
+				ul
+					li <span>Размер:</span> 9х143 мм
+					li <span>Тип нанесения:</span> Тампопечать, Уф-печать
+					li <span>Материал: </span> пластик
+					li <span>Бренд:</span> 9х143 мм Lecce pen
+					li <span>В наличии:</span> 6 шт.
+
+				div(class=`${column}__color`)
+					h3 Цвет:
+					div(class=`${column}__color-list`)
+						div(class=`${column}__color-list-item active`)
+							span(style = 'background-color: red;')
+						div(class=`${column}__color-list-item`)
+							span(style = 'background-color: green;')
+						div(class=`${column}__color-list-item`)
+							span(style = 'background-color: blue;')
+						div(class=`${column}__color-list-item`)
+							span(style = 'background-color: orange;')
+
+
+
+				div(class=`${column}__footer`)
+					div(class=`${column}__footer-price`) 174.10 руб.
+
+					div(class=`stepper`)
+						button(class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="Уменьшить количество")
+						label(class="stepper__field")
+							input(class="stepper__input" type="text" value="1" maxlength="3")
+						button(class="stepper__btn stepper__btn--up" aria-label="Увеличить количество")
+
+					button(class="btn btn-by") Заказать
+					button(class="btn btn-kp") КП +
+
+
+
+		div(class=`${section}__popular`)
+			div(class=`title`) Похожие товары
+
+			div(class=`${section}__popular-list`)
+
+				mixin item(img,name,descr)
+					div(class=`${section}__popular-list-item`)
+						div(class=`${section}__popular-list-item__img`)
+							img(src=`https://www.alfagrafika.ru/upload/iblock/a7f/61998a05-2779-11e8-9438-00155d640301.jpg` alt=`#`)
+						div(class=`${section}__popular-list-item__name`) Блокнот Office А5, верхний гребень, белый блок, клетка, 60 листов
+						div(class=`${section}__popular-list-item__article`) Артикул 61354
+						div(class=`${section}__popular-list-item__footer`)
+							div(class=`${column}__footer-price`) 174.10 руб.
+
+							div(class=`stepper`)
+								button(class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="Уменьшить количество")
+								label(class="stepper__field")
+									input(class="stepper__input" type="text" value="1" maxlength="3")
+								button(class="stepper__btn stepper__btn--up" aria-label="Увеличить количество")
+
+							button(class="btn btn-by") Заказать
+							button(class="btn btn-kp") КП +
+
+
+				+item()
+				+item()
+				+item()
+
+
+
+
+
+
+
+- var class_name = 'footer'
+footer(class=`${class_name}`)
+
+	//- ряд
+	div(class=`${class_name}__row-top container`)
+		a(class=`${class_name}__row-top-logo` href='/')
+			img(class='logo' src='assets/img/front/logo.png' alt=`#`)
+
+		a(class=`${class_name}__row-top-adress` href='/kontakty/#address') Нижний Новгород, ул. Совхозная, 13к4
+
+		div(class=`${class_name}__row-top-email`)
+			div(class=`${class_name}__row-top-email-box`)
+				p Электронная почта:
+				a(href='mail:alfagrafica@mail.ru') alfagrafica@mail.ru
+
+		div(class=`${class_name}__row-top-phone`)
+			div(class=`${class_name}__row-top-phone-box`)
+				a(href='tel:+7312123707') +7 (831) 212-37-07
+				a(class = 'footer__send' data-da = 'footer, 1, 567' data-path = 'two-dom') заказать звонок
+
+		div(class=`${class_name}__row-top-time`)
+			p <span>Время работы:</span> Пн-Пт 10:00-18:00
+
+
+	//- ряд
+	div(class=`${class_name}__row-nav container`)
+
+		//- nav
+		nav
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Ручки и карандаши','')
+				+item('Подарочные наборы','')
+				+item('Электроника, флешки, аккумуляторы','')
+				+item('Ежедневники и блокноты','')
+				+item('Брелоки','')
+		//- nav
+		nav
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Новогодние подарки','')
+				+item('Печать на одежде','')
+				+item('Промо-сувениры','')
+				+item('Сладкие подарки','')
+				+item('Сумки и рюкзаки','')
+
+
+		//- nav
+		nav
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Сувениры для дома','')
+				+item('Пакеты','')
+				+item('Зонты','')
+				+item('Сувениры для путешествий и отдыха, пледы','')
+				+item('Печать на шарах','')
+
+		//- nav
+		nav
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Посуда, кружки, термокружки','')
+				+item('Наградная продукция, медали','')
+				+item('Полиграфическая продукция','')
+				+item('Часы','')
+				+item('Упаковка подарочная','')
+				+item('Календари','')
+
+
+	//- ряд
+	div(class=`${class_name}__row-footer container`)
+
+		div(class=`${class_name}__row-footer-politic`)
+			div(class=`${class_name}__row-footer-politic-top`)
+				div(class=`${class_name}__row-footer-politic-top-item`) © 2006-2022 Альфа Графика
+				a(class=`${class_name}__row-footer-politic-top-item` href='/personal-data-agreement/' target='blank') <span>Положение об обработке персональных данных</span>
+				a(class=`${class_name}__row-footer-politic-top-item` href='/sitemap') <span>Карта сайта</span>
+			div(class=`${class_name}__row-footer-politic-bottom`) Внимание! Информация на сайте не является публичной офертой. Данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 ГК РФ. Для получения подробной информации о стоимости, тираже, сроках выполнения, пожалуйста, обращайтесь к сотрудникам компании.
+
+
+
+		div(class=`${class_name}__row-footer-sohial` data-da = 'footer, 1, 1150')
+			a(class=`${class_name}__row-footer-sohial-news` href='https://vk.com/alfa_grafika') Подписаться на новости
+			div(class=`${class_name}__row-footer-sohial-box`)
+				a(class=`${class_name}__row-footer-sohial-box-link--vk` href='https://vk.com/alfa_grafika' target="_blank" rel="nofollow noindex")
+				a(class=`${class_name}__row-footer-sohial-box-link--yotube` href='https://www.youtube.com/channel/UCuYQXLyOfkSqFUUnW5YI1Ww' target="_blank" rel="nofollow noindex")
+
+
+// Модальные окна
+
+div(class="modal-popup" data-close="two" data-target="two")
+	div(class="modal-popup__close" data-close="two") ×
+	div(class="modal-popup__container fadeInUp modal-popup-open animate-open")
+		form(class="form-modal")
+			h2(class="form-modal__title") Заказать звонок
+
+			div(class="placeholder-container placeholder-container__input")
+				input(class="_necessarily" type="text" name="nameUser")
+				div(class="caption") имя
+
+			div(class="placeholder-container placeholder-container__input")
+				input(class="_necessarily" type="tel" data-mask="tel" name="phoneUser")
+				div(class="caption") Телефон
+
+			button(class="btn" data-form="true") Отправить
+
+//| <script type="text/javascript" src="https://vk.com/js/api/openapi.js?132"></script>
+//| <div id="vk_groups"></div>
+//| <script type="text/javascript">
+//| VK.Widgets.Group("vk_groups", {mode: 1, width: "355", height: "400", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 70700476);
+//| </script>
+
+
+
+

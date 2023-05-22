@@ -1,0 +1,246 @@
+.bx-breadcrumb {
+  @include r($small) {
+    display: none;
+  }
+}
+
+
+.wrap_stroymarket .sort .sort__item:nth-child(2) {
+  color: #000;
+  border-bottom: 1px dashed #000;
+  position: relative;
+  margin-right: 18px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  	right: -18px;
+  	width: 12px;
+  	height: 8px;
+    background-image: url(/local/templates/expo_market/img/popular.svg);
+  	content: '';
+  }
+
+}
+
+.catalog {
+  .content {
+    display: flex;
+  }
+  .bx-filter {
+    .bx-ui-slider-track-container {
+      margin: 0 6px;
+
+      .bx-ui-slider-pricebar-vn {
+        display: none;
+      }
+
+      .bx-ui-slider-range {
+        background: $lightblue;
+      }
+
+      .bx-ui-slider-part {
+        display: none;
+      }
+
+      .bx-ui-slider-track {
+        height: 2px;
+      }
+
+      .bx-ui-slider-handle {
+        border-radius: 100px;
+        top: -9px;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+
+        &.left {
+          margin-left: -10px;
+        }
+
+        &.right {
+          margin-right: -10px;
+        }
+      }
+
+      .bx-filter-button-box {
+        margin-top: 20px;
+      }
+    }
+
+
+    .group.group_label {
+      margin-bottom: 0;
+    }
+
+    .filter-price {
+      margin-top: 10px;
+
+      .bx-filter-parameters-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .bx-filter-parameters-box-container-block {
+          width: 49%;
+        }
+      }
+    }
+  }
+
+  .mobile__filter {
+    .bx-filter {
+      .bx-filter-section {
+        padding-top: 0;
+      }
+
+      .bx-filter-parameters-box {
+        position: inherit;
+      }
+
+      .bx-filter-parameters-box-title {
+        border-bottom: 1px solid $color-font-light;
+        padding: 10px 0;
+      }
+
+      .buttons-block {
+        position: sticky;
+        bottom: 0;
+      }
+
+      .bx-filter-button-box {
+        .bx-filter-parameters-box-container {
+          display: flex;
+          justify-content: space-between;
+          background-color: white;
+          padding: 10px 0;
+
+          .btn {
+            width: 48%;
+          }
+
+          .btn.btn_white {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .bx-ui-slider-track-container {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .mobile__filter-icon {
+      display: none;
+      position: fixed;
+      right: 10px;
+      z-index: 99;
+      bottom: 64px;
+      width: 48px;
+      height: 48px;
+      background-color: $primary;
+      border-radius: 100px;
+
+      &:before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        top: 12px;
+        left: 12px;
+        background: url('../expo_market/img/filter.svg') no-repeat;
+        background-size: cover;
+        position: absolute;
+      }
+
+      @include r($small) {
+        display: inherit;
+      }
+    }
+  }
+}
+// вывод разделов
+.catalog__all__section {
+  .cblock__col {
+    height: initial;
+
+  }
+
+  .cblock__item.xl-none {
+    display: block !important;
+    max-width: 100%;
+    height: 63px;
+    overflow: initial;
+    object-fit: cover;
+    padding: 0;
+    border: none;
+    margin: 0 auto 34px auto;
+
+
+  }
+
+  .cblock__item {
+    overflow: hidden;
+    position: relative;
+    height: 360px;
+    margin-bottom: 16px;
+    padding-top: 0 !important;
+    .cblock__img {
+      height: 133px;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .cblock__item__name {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .cblock__item__count {
+      color: #737373;
+      margin-bottom: 12px;
+    }
+    .cblock__item__toggle, .item__toggle{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: #FFF6F1;
+      border-radius: 4px 4px 0px 0px;
+      padding: 10px 24px;
+      text-decoration: underline;
+      &::after {
+        position: absolute;
+         transform: translateY(-100%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+        content: '';
+      }
+
+    }
+  }
+}
+
+// item
+.catalog__item {
+  .block__item {
+    min-width: 246px;
+  }
+  .block__item__img {
+    max-width: 200px;
+    img {
+      max-width: 200px;
+    }
+  }
+  .block__item__cost {
+    span {
+      color: #737373;
+    }
+  }
+}
+

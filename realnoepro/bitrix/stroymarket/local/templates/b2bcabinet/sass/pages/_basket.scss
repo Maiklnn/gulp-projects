@@ -1,0 +1,150 @@
+.catalog__item .block__item__favorite {
+  display: none;
+}
+.page-basket {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7 {
+    flex: initial;
+  }
+  margin-bottom: -20px;
+  #basket-item-list {
+    thead {
+      tr {
+        th:nth-child(1) {
+          max-width: 56px !important;
+        }
+        th:nth-child(2) {
+          min-width: 470px !important;
+
+        }
+        th:nth-child(3) {
+          max-width: 150px !important;
+        }
+        th:nth-child(4) {
+          max-width: 225px !important;
+        }
+        th:nth-child(5) {
+          min-width: 130px !important;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td:nth-child(1){
+          max-width: 56px !important;
+         }
+        td:nth-child(2){
+          min-width: 470px !important;
+        }
+        td:nth-child(3){
+          max-width: 150px !important;
+        }
+        td:nth-child(4){
+          max-width: 225px !important;
+        }
+        td:nth-child(5){
+          min-width: 130px !important;
+        }
+        td:nth-child(6){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:after {
+            content: '';
+            display: block;
+            background: url("/local/templates/b2bcabinet/assets/images/icon/basket-2.svg");
+            min-width: 14px;
+            height: 16px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .basket-item-price {
+    font-weight: 700;
+  }
+
+  .index_checkout-table {
+    @include r($small) {
+      .offer__list li {
+        padding: 10px 0;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .offer__list {
+    padding: 0;
+
+    li {
+      padding-bottom: 28px;
+
+      + li {
+        padding-top: 28px;
+      }
+    }
+  }
+
+  h2.card-title {
+    font-size: 24px;
+    font-weight: 500;
+    @include r($small) {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  @include r($small) {
+    padding-bottom: 90px;
+  }
+
+  .summery-order-basket {
+    & > .d-flex {
+      @include r($small) {
+        justify-content: space-between;
+      }
+    }
+
+    .summery-order-info {
+      align-items: center;
+      @include r($small) {
+        justify-content: flex-end;
+      }
+    }
+
+    .btn {
+      @include r($small) {
+        order: 2;
+      }
+    }
+  }
+
+  .index_checkout-delivery_text {
+    & > div {
+      display: flex;
+    }
+
+    .input-group {
+      width: auto;
+    }
+
+    .delivery-store-title {
+      display: block;
+      padding-left: 25px;
+      padding-top: 4px;
+      font-size: 14px;
+    }
+  }
+}
+
+.index_order_success {
+  .card-body.checkout_form h2 {
+    font-size: 24px;
+  }
+}

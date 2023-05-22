@@ -1,0 +1,435 @@
+.grid-without-action {
+  .main-grid .main-grid-row::after {
+    left: 0;
+    right: 0;
+  }
+}
+
+// bitrix main ui grid
+.main-grid {
+  font-size: 14px;
+  width: 100%;
+
+  .main-grid-table {
+    min-width: 100%;
+  }
+
+  .main-grid-container {
+    border-radius: 4px;
+    border: 1px solid $color-font-light;
+    background-color: white;
+    @include r($small) {
+      outline: none;
+    }
+  }
+
+  &-header {
+    @include r($small) {
+      display: none;
+    }
+
+    .main-grid-control-sort {
+      left: 0;
+    }
+
+    .main-grid-col-sortable {
+      .main-grid-head-title {
+        border-bottom: 1px dotted $primary;
+        padding-right: 0;
+      }
+    }
+
+    .main-grid-row-head {
+      th:first-child {
+        .main-grid-cell-head-container {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .main-grid-cell-head-container {
+      padding-top: 15px;
+      padding-bottom: 11px;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      min-width: 100%;
+      position: relative;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  .main-grid-interface-settings-icon {
+    display: none;
+  }
+
+  .main-grid-row {
+    position: relative;
+
+    &:hover {
+      background-color: $gray;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      top: 0;
+      border-bottom: 1px solid $color-font-light;
+    }
+
+    &:last-child {
+      .main-grid-cell {
+        .main-grid-cell-content {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    &.main-grid-not-count {
+      display: none;
+    }
+
+    .main-grid-cell {
+      color: $black;
+      background-color: inherit;
+
+      &.main-grid-cell-action {
+        padding-left: 25px;
+        @include r($small) {
+          padding-left: 0;
+        }
+      }
+
+      .img-product {
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+
+      a {
+        color: $black;
+      }
+
+      .main-grid-cell-content {
+        margin: 12px 16px 16px;
+        @include r($small) {
+          white-space: inherit;
+        }
+      }
+    }
+
+    td:first-child:not(.main-grid-cell-action) {
+      .main-grid-cell-content {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .main-grid-panel-cell-pagination {
+    //position: absolute;
+    //padding: 0;
+    //left: 0;
+    //display: flex;
+    //z-index: 2;
+    @include r($small) {
+      position: relative;
+      width: auto;
+      margin-top: 20px;
+      margin-left: -24px;
+      margin-right: -24px;
+      bottom: auto;
+    }
+
+    .page-item {
+      &.active {
+        a {
+          background: $primary;
+        }
+      }
+    }
+  }
+
+  // mobile base
+  @include r($small) {
+    .main-grid-nav-panel,
+    .main-grid-header {
+      display: none !important;
+    }
+
+    .main-grid-table {
+      min-width: 100%;
+
+      .main-grid-row {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        background-color: white;
+        flex-wrap: wrap;
+        height: auto;
+
+        .main-grid-cell {
+          border: none;
+          width: auto;
+          min-height: auto;
+
+          &-action {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// grid catalog
+.page-products {
+  .main-grid-cell-favorite {
+    .icon-my-favorites:before {
+      content: url("assets/images/icons_favorite.svg");
+    }
+
+    a.active {
+      .icon-my-favorites:before {
+        content: url("assets/images/icons_favorite-active.svg");
+      }
+    }
+  }
+
+  @include r($small) {
+    .main-grid-container {
+      .main-grid-cell-preview {
+        width: 100%;
+
+        .img-product {
+          display: flex;
+          align-items: flex-start !important;
+        }
+      }
+
+
+      .main-grid-row {
+        position: relative;
+
+        .main-grid-cell-price {
+          .main-grid-cell-content {
+            margin: 0 0 0 10px !important;
+
+            strong {
+              font-weight: 100 !important;
+            }
+          }
+        }
+
+        .main-grid-cell-favorite {
+          position: absolute;
+          min-height: 40px;
+          top: 0;
+          right: 20px;
+        }
+
+        .main-grid-cell-catalog_vat {
+          width: 100%;
+          order: 1;
+          padding-left: 50px;
+          margin-top: -5px;
+
+          .main-grid-cell-content {
+            margin-top: 0 !important;
+            opacity: .6;
+            font-size: 12px;
+          }
+        }
+
+        .main-grid-cell-quantity {
+          padding-left: 50px;
+          width: 150px;
+
+          .input-group.bootstrap-touchspin {
+            width: 90px;
+
+            .form-control.touchspin-empty {
+              max-width: 38px;
+            }
+          }
+        }
+
+        .main-grid-cell-catalog_measure_name {
+          width: 10%;
+
+          .main-grid-cell-content {
+            margin: 0 8px !important;
+          }
+        }
+
+        .main-grid-cell-quantity,
+        .main-grid-cell-catalog_measure_name,
+        .main-grid-cell-price {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+// grid basket & order add product
+.products-table-popup {
+  @include r($small) {
+    .main-grid-container {
+      text-align: left;
+
+      .main-grid-cell-preview_picture {
+        display: none;
+      }
+
+      .main-grid-row {
+        position: relative;
+        align-items: center;
+        padding: 16px 0;
+
+        .main-grid-cell-name {
+          width: 100%;
+          font-size: 16px;
+          color: #333;
+        }
+
+        .main-grid-cell-price {
+          font-weight: 600;
+          order: 1;
+          color: #333;
+          margin-right: 5px;
+        }
+
+        .main-grid-cell-measure {
+          order: 2;
+        }
+
+        .main-grid-cell-to_basket {
+          margin-left: auto;
+          order: 3;
+        }
+      }
+    }
+  }
+}
+
+// grid order detail
+.blank_detail {
+  .main-grid {
+    @include r($small) {
+      .main-grid-nav-panel,
+      .main-grid-header {
+        display: none !important;
+      }
+
+      .main-grid-table {
+        .main-grid-row {
+          padding: 16px;
+
+          .main-grid-cell {
+            .main-grid-cell-content {
+              margin: 2px 0;
+            }
+
+            &-tag {
+              font-weight: 600;
+              width: 100%;
+            }
+
+            &-files {
+              a {
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 4px;
+              }
+            }
+
+            &-date_create, &-name {
+              width: 49%;
+              font-size: 12px;
+              opacity: .6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// main.pagenavigation
+.main-ui-pagination-pages {
+  font-size: 16px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+  .main-ui-pagination-page {
+    border: 2px solid white;
+    color: $primary;
+    padding: 3px 11px;
+    border-radius: 4px;
+    margin: 0 5px;
+
+    &.main-ui-pagination-active {
+      border-color: $green;
+    }
+  }
+
+
+  .main-ui-pagination-pages-list {
+    display: flex;
+  }
+
+  .main-ui-pagination-arrow {
+    padding: 12px 16px 12px 12px;
+    color: $primary;
+    background-color: $lightblue;
+    border-radius: 4px;
+    text-transform: initial;
+    position: relative;
+
+    &.main-ui-pagination-prev {
+      margin-right: 25px;
+      padding-left: 35px;
+
+      &:before {
+        content: '';
+        background: url("/local/templates/b2bcabinet_market/assets/images/arrow.svg");
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 12px;
+        top: 17px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.main-ui-pagination-next {
+      margin-left: 20px;
+      padding-right: 35px;
+
+      &:before {
+        content: '';
+        background: url("/local/templates/b2bcabinet_market/assets/images/icons_arrow_right.svg");
+        width: 20px;
+        height: 18px;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.disabled {
+      opacity: .6;
+    }
+  }
+}

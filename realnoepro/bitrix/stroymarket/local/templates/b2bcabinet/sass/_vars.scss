@@ -1,0 +1,75 @@
+// User variables:
+$text: #333;
+$gray: #F7F8FA; // $color-ui-light
+$primary: #CB3300; // $color-base
+$black: #000; // $color-black
+$lightblue: #E9EDF5; // $color-ui-lighter
+$darkblue: #7D95BD; // $color-ui-darker $color-font-dark
+$green: #44F3B4; // $color-accent
+$color-font-light: #E7EFFD;
+$color-ui-base: #C7D4E9;
+$succes: #28BC00;
+$darkgray: #737373;
+$orange: #FF6000;
+$bg_color: #F9F9F9;
+$bg_color_input: #EDEDED;
+
+// Max-width
+$tablet: 1199px;
+$mobile: 767px;
+$mobile-sm: 375px;
+
+$xsmall: 300px;
+$small: 640px;
+$medium: 900px;
+$large: 1200px;
+$mlarge: 1365px;
+$xlarge: 1600px;
+
+$font: 'Raleway', 'sans-serif';
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-Regular.eot');
+  src: url('assets/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Raleway-Regular.woff') format('woff'),
+  url('assets/fonts/Raleway-Regular.ttf') format('truetype'),
+  url('assets/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-Bold.eot');
+  src: url('assets/fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Raleway-Bold.woff') format('woff'),
+  url('assets/fonts/Raleway-Bold.ttf') format('truetype'),
+  url('assets/fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-SemiBold.eot');
+  src: url('assets/fonts/Raleway-BSemiBoldold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Raleway-SemiBold.woff') format('woff'),
+  url('assets/fonts/Raleway-SemiBold.ttf') format('truetype'),
+  url('assets/fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: fallback;
+}
+@font-face {
+    font-family: 'Courier New';
+    src: url('assets/fonts/CourierNew.woff2') format('woff2'),
+        url('assets/fonts/CourierNew.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

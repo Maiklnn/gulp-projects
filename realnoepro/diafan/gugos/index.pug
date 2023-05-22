@@ -1,0 +1,250 @@
+extends _includes/pug/template.pug
+
+append config
+    - var title = 'Гугос главная';
+    - var header = true;
+
+
+block main
+
+    //- преимущества
+    - var class_name = 'main-advantages'
+    section(class=`${class_name}`)
+
+        div(class=`${class_name}__row container`)
+
+
+            div(class=`${class_name}__row-column`)
+                h4 Даём гарантию <br> 5 лет
+                p  Своим клиентам мы предлагаем гарантию качества сроком на 5 лет, что является единственным предложением на рынке.
+
+            div(class=`${class_name}__row-column`)
+                h4(class='accent') Фиксация нестабильного берега любых водоемов
+                p Ремонт балконов и лоджий - единственное направление нашей деятельности
+
+            div(class=`${class_name}__row-column`)
+                a( class='accent' href='#') Подробнее
+
+
+
+
+    //- о компании
+    - var class_name = 'main-about'
+    section(class=`${class_name}`)
+
+        div(class=`${class_name}__container`)
+            div(class=`logo`)
+                img(src='assets/img/front-new/logo-silver.png' alt=`#`)
+
+            h3(class=`${class_name}__title-mobile`) Компания ГУГОС нацелна на лучший результат
+
+            div(class=`${class_name}__descr-border`) Компания ГУГОС с 2012 года является надежным подрядчиком государственных учреждений и частных клиентов, предоставляющая спектр строительных услуг
+
+            div(class=`${class_name}__descr`) Компания ГУГОС нацелена на результат, поэтому идет в ногу со временем. Мы применяем новейшие технологии производства. Мы рекомендуем своих проверенных партнеров. Мы обеспечиваем максимальный комфорт для заказчика, которому достаточно только слушать и принимать решение.
+
+        // мы предлогаем
+        - var class_name = 'main-about-we'
+        section(class=`${class_name}`)
+            div(class=`title`) Мы предлагаем
+
+            div(class=`${class_name}__container`)
+                div(class=`${class_name}__list`)
+
+                    div(class=`${class_name}-item`)
+
+                        div(class=`${class_name}-item__img`)
+                            img(src='/custom/my/assets/img/front-new/content/products/1.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href='/') Берего <br> укрепление
+                            div(class=`${class_name}-item__descr-list`)
+                                a(href='/') Укрепление лиственницей
+                                a(href='/') Габионные конструкции
+                                a(href='/') Шпунт ПВХ
+                                a(href='/') Шпунт Ларсена
+
+
+                    div(class=`${class_name}-item`)
+                        div(class=`${class_name}-item__img`)
+                            img(src='/custom/my/assets/img/front-new/content/products/2.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href='/') Габионы
+                            div(class=`${class_name}-item__descr-list`)
+                                a(href='/') Коробчатые;
+                                a(href='/') Цилиндрические;
+                                a(href='/') Матрасно-тюфячные.
+
+
+                    div(class=`${class_name}-item`)
+                        a(href='#') Габионы
+                        a(href='#') Берегоукрепление
+                        a(href='#') Терасы
+                        a(href='#') Пирсы
+                        a(href='#') Строительство и реконструкция зданий
+                        a(href='#') Благоустройство територий
+                        a(href='#') Инженерная работа
+                        a(href='#') Поэктирование
+                        a(href='#') Детское и парковое оборудование
+
+
+                    div(class=`${class_name}-item small`)
+                        div(class=`${class_name}-item__img`)
+                            img(src='custom/my/assets/img/front-new/content/products/3.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href='/') Строительство <br> прудов
+
+
+                    div(class=`${class_name}-item`)
+                        div(class=`${class_name}-item__img`)
+                            img(src='custom/my/assets/img/front-new/content/products/4.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href='/') Проекти- <br> рование
+                            div(class=`${class_name}-item__descr-list`)
+                                a(href='/') Проектирование гидротехнических сооружений и Сопровождение при получении разрешительной документации на строительство в Росрыболовстве, Министерстве
+
+
+                    div(class=`${class_name}-item small`)
+                        div(class=`${class_name}-item__img`)
+                            img(src='custom/my/assets/img/front-new/content/products/5.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href='/') Строительство
+                            div(class=`${class_name}-item__descr-list`)
+                                a(href='/') Пирсы
+                                a(href='/') Терассы
+                                a(href='/') Набережные
+                                a(href='/') Слипы
+                                a(href='/') Эллинги
+
+
+                    div(class=`${class_name}-item`)
+                        div(class=`${class_name}-item__img`)
+                            img(src='/custom/my/assets/img/front-new/content/products/6.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href="") реконструкция зданий
+
+                    div(class=`${class_name}-item`)
+                        div(class=`${class_name}-item__img`)
+                            img(src='/custom/my/assets/img/front-new/content/products/7.jpg' alt=`#`)
+                        div(class=`${class_name}-item__descr`)
+                            a(class=`${class_name}-item__descr-name` href='/') Благо устройство територий
+
+
+
+
+
+
+
+
+
+
+            //- форма
+            - var class_name = 'main-form'
+            section(class=`${class_name}`)
+                div(class=`${class_name}__row`)
+
+                    div(class=`${class_name}__row-left`)
+
+                    - var class_form = `${class_name}__row-left-form`
+
+                    form(class=`${class_form}`)
+                        div(class=`title`) Отправьте нам заявку на расчет стоимости
+                        div(class=`${class_form}__description`) Оставьте заявку и мы перезвоним Вам. Готовы ответить на любые вопросы. всегда рады сотрудничеству. Или просто позвоните нам по горячей линии по номеру 8 800 787 65 43
+
+                        .placeholder-container.placeholder-container__input
+                            input(class=`_necessarily` type=`text` name="nameUser")
+                            div(class='caption') Имя
+
+                        .placeholder-container.placeholder-container__input
+                            input(class=`_necessarily` type="text" name="phoneUser")
+                            div(class='caption') Телефон
+
+                        div(class=`${class_form}__footer`)
+                            button(class='btn' data-form = 'true') Получить консультацию
+                            p <span>*</span>согласие на обработку персональных данных
+
+
+
+                    img(class="logo" src='assets/img/front-new/logo.png' alt=`#`)
+
+                    div(class=`${class_name}__row-right`)
+                        img(src='assets/img/front-new/form.jpg' alt=`#`)
+
+
+
+            // specification
+            - var class_name = 'main-specification'
+            section(class=`${class_name}`)
+                div(class=`${class_name}__container`)
+                    div(class=`${class_name}__list`)
+                        mixin item(img,name,descr)
+                            div(class=`${class_name}-item`)
+                                div(class=`${class_name}-item__img`)
+                                    img(src=`assets/img/front-new/icon/advantades/${img}` alt=`#`)
+                                div(class=`${class_name}-item__name`)= name
+                                div(class=`${class_name}-item__descr`)= descr
+
+                        +item('1-2-3.png','3 дня', '3 дня - среднее время выполнять работы')
+                        +item('2.png','5 дня', 'Гарантия 5 лет на работы и 3 гола на материалы.')
+                        +item('3.png','Подход к работе', 'В работе используем качественный материал (ПВХ шпунт)')
+                        +item('4.png','Аванс всего 20%', 'Аванс в 20% когда материалы уже привезли')
+                        +item('5.png','Замер', 'мерщик приезжает бесплатно ( даже если откажитесь от ремонта')
+                        +item('6.png','Доставка 24/7', 'Доставка в любое время')
+
+
+
+            //- текстовый блок 2
+            - var class_name = 'main-descr-two'
+            section(class=`${class_name}`)
+                div(class=`logo`)
+                    img(src='assets/img/front-new/logo-silver.png' alt=`#`)
+                div(class=`title`) Мы работаем с любыми видами водоемов и прудов
+                div(class=`${class_name}__text-border`) Наш опыт, надежное и эффективное решение задач позволяют работать как с небольшими декоративными прудами, так и с крупными объектами, беря все риски на себя.
+                div(class=`${class_name}__text`) Мы ждем вас в офисе нашей компании, находящегося в Москве, где у вас всегда есть возможность лично ознакомиться с материалами, а специалисты готовы помочь с выбором шпунта и сделать все необходимые расчеты для грамотной реализации вашего проекта. Также наши сотрудники всегда готовы ответить по телефону на ваши вопросы, разобрать задачу и дать технические пути ее решения.
+
+
+
+
+
+            //- name-slider
+            - var class_slider = 'slider-prew'
+            section(class=`${class_slider}`)
+                div(class=`${class_slider}__box swiper-container`)
+                    div(class=`${class_slider}__wrapper swiper-wrapper`)
+
+
+                        mixin item(img, title, descr)
+                            div(class=`${class_slider}-slide swiper-slide`)
+                                img(src=`assets/img/front-new/content/slider/${img}` alt=`#`)
+
+
+                        +item('2.jpg', '', '')
+                        +item('4.jpg', '', '')
+                        +item('5.jpg', '', '')
+                        +item('2.jpg', '', '')
+                        +item('4.jpg', '', '')
+                        +item('5.jpg', '', '')
+
+
+                div(class=`${class_slider}-pagination`)
+
+                div(class=`${class_slider}__text`) Оставьте заявку, чтобы получить готовый проэкт укрепления берега
+
+
+
+            // coast
+            - var class_name = 'main-coast'
+            section(class=`${class_name}`)
+                div(class=`${class_name}__container`)
+                    div(class=`title`) Стоимость укрепления берегов
+
+                    mixin item(name,descr)
+                        div(class=`${class_name}-item`)
+                            div(class=`${class_name}-item__descr`)= name
+                            div(class=`${class_name}-item__price`)= descr
+                            a(class=`${class_name}-item__order` data-path="one-dom" href='#') Заказать
+
+                    +item('Выезд, Обследование, План работ', 'Бесплатно')
+                    +item('Формирование откосов линии берега', 'от 600 руб')
+                    +item('Выезд, Обследование, План работ', 'Бесплатно')
+                    +item('Монтаж свай из листвинницы', 'от 600 руб')
+                    +item('Выезд, Обследование, План работ', 'Бесплатно')
+                    +item('Формирование откосов линии берега', 'от 600 руб')

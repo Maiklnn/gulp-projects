@@ -1,0 +1,83 @@
+.modal.modal-offer.fancybox-content {
+  width: 100%;
+  max-width: 986px;
+  max-height: 563px;
+  padding-right: 0;
+  text-align: left;
+  @include r($small) {
+    max-height: 100%;
+    padding-bottom: 0;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.offer .input-group {
+  height: 48px;
+  display: flex;
+}
+
+.offer__price span {
+  display: flex;
+}
+
+.btn.btn-light {
+  color: #000 !important;
+  background-color: #EDEDED !important;
+  border: 1px solid #E9EDF5;
+}
+
+.btn.bootstrap-touchspin-down:before {
+  content: "";
+  background: url(/local/templates/b2bcabinet/assets/images/icon_minus_basket.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  background-repeat: no-repeat;
+
+}
+
+.form-group .form-control.touchspin-empty {
+  width: 100%;
+  font-size: 14px;
+  padding: 0;
+  max-width: 48px;
+  text-align: center;
+  height: auto;
+  background-color: white;
+}
+
+.btn.bootstrap-touchspin-up:before {
+  content: "";
+  background: url(/local/templates/b2bcabinet/assets/images/icon_plus_basket.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  background-repeat: no-repeat;
+  background-color: #EDEDED;
+}
+
+.offer__thumb a.active::before {
+  content: "";
+  border: 2px solid #CB3300 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+
+.modal.fancybox-content.modal__white .fancybox-close-small {
+  height: 24px;
+  width: 24px;
+  top: 25px;
+  background-image: url(/local/templates/b2bcabinet/components/bitrix/catalog.element/b2bcabinet_preview/img/icon_close.svg);
+}

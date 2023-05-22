@@ -1,0 +1,59 @@
+@import "components/form";
+@import "components/title";
+
+.title {
+	@include adaptiveValue("font-size", 60, 30);
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+}
+
+
+
+// components
+.tab {
+	&__nav {
+
+	}
+
+	&__link:hover {
+		opacity: .7
+	}
+
+	&__link--active {
+		color: $accent;
+	}
+	&__content-item {
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: all 1s
+	}
+
+	&__content-item--active {
+		height: auto;
+		opacity: 1;
+		overflow: visible
+	}
+
+}
+
+.swiper {
+	&-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&-wrapper {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-slide {
+		flex-shrink: 0;
+	}
+}
+
+

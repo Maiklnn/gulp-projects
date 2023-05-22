@@ -1,0 +1,288 @@
+extends _includes/pug/template.pug
+
+append config
+    - var title = 'Гугос услуги';
+    - var header = true;
+    - var classBody = 'page-info';
+
+
+block main
+
+
+    - var class_name = 'page-info'
+    main(class=`page  ${class_name}`)
+        //- ----------------------------------------лиственница - долговечный материал
+        - var row = `${class_name}-row1`
+        section(class=`${row}`)
+            div(class=`container`)
+                h2 - лиственница - долговечный материал
+                p.border Самые распространенные способы укрепления берегов с помощью бруса лиственницы и габиона. Это не только укрепит, но и придаст красивый вид берегу Вашего водоема.
+                div(class=`${row}__inner`)
+
+                    div(class=`${row}__inner-left`)
+                        p Лиственница – самая тяжелая и твердая порода древесины в России, которая за счет своей высокой плотности и смолистости устойчива к гниению даже в условиях постоянного контакта с водой.
+                        p Террасы из лиственницы долговечны и имеют натуральный облик.
+                        p Современный мир принес нам новые долговечные и экологически чистые материалы по обшивке террас и пирсов. Террасы из декинга (древесно-полимерный композит) служат долго и не теряют внешний вид.
+
+                    div(class=`${row}__inner-right`)
+                        img(src='custom/my/assets/img/info/home.jpg' alt=`#`)
+
+                img(class='logo' src='custom/my/assets/img/front-new/logo-silver.png' alt=`#`)
+
+
+        //- ----------------------------------------где необходимо берегоуккрепление
+        - var row = `${class_name}-row2`
+        section(class=`${row}`)
+            div(class=`${row}__container`)
+                div(class=`${row}__inner`)
+
+                    p  Вода – одна из самых мощных и неукротимых природных стихий. Она непрерывно меняет рельеф ландшафтов, настойчиво и упорно прокладывая свой путь и сметая на нем все преграды.
+                    h2 Где необходимо берегоукрепление
+
+                    div(class=`${row}__inner-list`)
+                        mixin item(descr)
+                            div(class=`${row}__inner-list-item`)
+                                div(class=`${class_name}__inner-list-item__descr`)= descr
+
+                        +item('Берегоукрепление <strong>реки, пруда, озера, пожарного водоема</strong>')
+                        +item('Строительство <strong>пирсов, слипов, причальных стен</strong>')
+                        +item('Укрепление <strong>дорожного полотна</strong>, закрепление откосов')
+                        +item('Строительство <strong>набережных и пешеходных зон</strong> вдоль водоемов')
+                        +item('Берегоукрепление- <strong>ПВХ портовых сооружений</strong>')
+
+                div(class=`${row}__list-img`)
+                    img(src='custom/my/assets/img/info/where/1.jpg' alt=`#`)
+                    img(src='custom/my/assets/img/info/where/2.jpg' alt=`#`)
+                    img(src='custom/my/assets/img/info/where/3.jpg' alt=`#`)
+
+
+
+
+
+
+        //- -----------------------------------------технология укрепления берега листвиницей
+        - var row = `${class_name}-row3`
+        section(class=`${row}`)
+            div(class=`${row}__container`)
+
+                div(class=`${row}-inner-title`)
+                    h3 Технология укрепления берега листвиницей
+                    p  Упрощенно технологию проведения работ можно описать так:
+
+                div(class=`${row}__list`)
+                    mixin item(num, descr)
+                        div(class=`${row}__list-item`)
+                            div(class=`${row}__list-item__number`)= num
+                            div(class=`${row}__list-item__descr`)= descr
+
+                    +item('1', 'Для проведения таких работ в Москве применяют бревна, диаметром 18-22. Длина, как правило, составляет около 6 метров, а распил под конкретные размеры проводится уже непосредственно на месте проведения работ. Подготовка бревен к укреплению берег выполняется силами наших специалистов и включена в базовую стоимость услуги.')
+                    +item('2', 'Бревно очищается от коры и нарезается таким образом, чтобы обрезков не было, что позволяет оптимизировать итоговую стоимость услуги.')
+                    +item('3', 'Если специфика водоема позволяет полное осушение, то проводится 100% откачка воды. В остальных случаях приоритетной считается глубина до 40 сантиметров.')
+                    +item('4', 'При невозможности хотя бы частичного осушения до глубины в 40 сантиметров, применяются земснаряды.')
+                    +item('5', 'Линия для монтажа укрепительной конструкции тщательно очищается и выравнивается.')
+
+
+        //- -----------------------------------------преимущества
+        - var row = `${class_name}-row4`
+        section(class=`${row}`)
+            div(class=`${row}__container`)
+
+                div(class=`${row}__list`)
+                    mixin item(num, descr)
+                        div(class=`${row}__list-item`)
+                            div(class=`${row}__list-item__title`)= num
+                            div(class=`${row}__list-item__descr`)= descr
+
+                    +item('- Не замерзает', 'Устойчивость к температурным перепадам — лиственница не боится заморозков')
+                    +item('- Не гниёт', 'Отсутствие процессов гниения даже от продолжительного нахождения в воде')
+                    +item('', '')
+                    +item('- от подмываний и оползней', 'Отменное природное качество дерева позволяют использовать его не только для сооружения укрепляющих, противооползневых конструкций, но и при строительстве причалов и пирсов.')
+                    +item('- Безвредно природе!!', 'Польза природе не нарушает эко—баланс водоема!')
+                    +item('- Эстетика на 100%', 'высокие эстетические показатели сооружения')
+
+
+
+
+        //- -----------------------------------------------форма
+        - var class_name = 'main-form'
+        section(class=`${class_name}`)
+            div(class=`${class_name}__row`)
+
+                div(class=`${class_name}__row-left`)
+                    - var class_form = `${class_name}__row-left-form`
+                    form(class=`${class_form}`)
+                        div(class=`title`) <div>Отправьте нам <span>заявку<br> на бесплатную консультацию</span></div>
+                        // div(class=`title`) <div>Отправьте нам <span>заявку<br> на бесплатную консультацию</span></div>
+                        div(class=`${class_form}__description`) Оставьте заявку и мы перезвоним Вам. Готовы ответить на любые вопросы. всегда рады сотрудничеству. Или просто позвоните нам по горячей линии по номеру 8 800 787 65 43
+
+                         .placeholder-container.placeholder-container__input
+                            input(class=`_necessarily` type=`text` name="nameUser")
+                            div(class='caption') Имя
+
+                         .placeholder-container.placeholder-container__input
+                            input(class=`_necessarily` type="text" name="phoneUser")
+                            div(class='caption') Телефон
+
+                        div(class=`${class_form}__footer`)
+                            button(class='btn' data-form = 'true') Получить консультацию
+                            p <span>*</span>согласие на обработку персональных данных
+
+
+
+                    img(class="logo" src='custom/my/assets/img/front-new/logo.png' alt=`#`)
+
+                div(class=`${class_name}__row-right`)
+                    img(src='custom/my/assets/img/info/form.jpg' alt=`#`)
+
+
+
+        // ------------------------------------------------coast
+        - var class_name = 'main-coast'
+        section(class=`${class_name}`)
+            div(class=`${class_name}__container`)
+                div(class=`title`) Стоимость укрепления берегов
+
+                mixin item(name,descr)
+                    div(class=`${class_name}-item`)
+                        div(class=`${class_name}-item__descr`)= name
+                        div(class=`${class_name}-item__price`)= descr
+                        a(class=`${class_name}-item__order` data-path="one-dom" href='#') Заказать
+
+                +item('Выезд, Обследование, План работ', 'Бесплатно')
+                +item('Формирование откосов линии берега', 'от 600 руб')
+                +item('Выезд, Обследование, План работ', 'Бесплатно')
+                +item('Монтаж свай из листвинницы', 'от 600 руб')
+                +item('Выезд, Обследование, План работ', 'Бесплатно')
+                +item('Формирование откосов линии берега', 'от 600 руб')
+
+
+
+        //- ------------------------------------------------цифры
+        - var row = `page-info-row5`
+        section(class=`${row}__container`)
+            div(class=`${row}__list`)
+                mixin item(name, descr)
+                    div(class=`${row}__list-item`)
+                        div(class=`${row}__list-item__number`)= name
+                        div(class=`${row}__list-item__descr`)= descr
+
+                +item('20+', 'лет в <br> работе')
+                +item('120+', 'Выполненых <br> проэктов')
+                +item('12', 'Эксклюзивных <br> патентов')
+                +item('18', 'человек <br> команда')
+
+
+
+
+        //- -----------------------------------------------video-slider
+        - var class_slider = 'video-slider'
+        section(class=`${class_slider}__section`)
+            div(class=`${class_slider} swiper-container`)
+                div(class='title') Посмотрите Видеообзоры на проэкты
+
+
+                div(class=`${class_slider}__wrapper swiper-wrapper`)
+
+
+                    mixin item(img, title, descr)
+                        div(class=`${class_slider}-slide swiper-slide`)
+                            div(class=`${class_slider}-slide__img-box`)
+                                img(src=`custom/my/assets/img/info/video/${img}` alt=`#`)
+                            div(class=`${class_slider}-slide__title`)= title
+                            div(class=`${class_slider}-slide__descr`)= descr
+
+
+
+                    +item('1.jpg', 'Укрепление берега речки лиственницей в д. Беляйка', 'Необходимо было укрепить берег речки, так же «поднять» и выровнять берег. Работы осуществля...')
+                    +item('2.jpg', 'Укрепление берега речки лиственницей в д. Беляйка', 'Необходимо было укрепить берег речки, так же «поднять» и выровнять берег. Работы осуществля...')
+                    +item('3.jpg', 'Укрепление берега речки лиственницей в д. Беляйка', 'Необходимо было укрепить берег речки, так же «поднять» и выровнять берег. Работы осуществля...')
+                    +item('1.jpg', 'Укрепление берега речки лиственницей в д. Беляйка', 'Необходимо было укрепить берег речки, так же «поднять» и выровнять берег. Работы осуществля...')
+                    +item('2.jpg', 'Укрепление берега речки лиственницей в д. Беляйка', 'Необходимо было укрепить берег речки, так же «поднять» и выровнять берег. Работы осуществля...')
+
+                div(class=`${class_slider}-pagination`)
+
+
+        //- ----------------------------------------------карточки
+        - var class_name = 'services-card'
+        section(class=`${class_name}`)
+            div(class=`${class_name}__container`)
+                div(class=`${class_name}__list`)
+                    mixin item(img,seazon,year,title,descr)
+                        if(!img)
+                            div(class=`${class_name}__list-link`)
+                                a(href = '#') Смотреть ещё <br> проэкты
+                        else
+                            a(class=`${class_name}__list-item`)
+                                div(class=`${class_name}__list-item__img-box`)
+                                    div(class=`${class_name}__list-item__caption-box`)
+                                        span= seazon
+                                        span= year
+                                    img(src=`custom/my/assets/img/info/${img}` alt=`#`)
+
+                                div(class=`${class_name}__list-item__title`)= title
+                                div(class=`${class_name}__list-item__descr`)= descr
+
+                    +item('object.jpg','лето', '2021 год', 'Московская область. Поселок Одеялково', 'Работы:  поменяны новые пластиковые окна на дерево-алюминиевые.')
+                    +item('object.jpg','лето', '2021 год', 'Московская область. Поселок Одеялково', 'Работы:  поменяны новые пластиковые окна на дерево-алюминиевые.')
+                    +item('object.jpg','лето', '2021 год', 'Московская область. Поселок Одеялково', 'Работы:  поменяны новые пластиковые окна на дерево-алюминиевые.')
+                    +item('object.jpg','лето', '2021 год', 'Московская область. Поселок Одеялково', 'Работы:  поменяны новые пластиковые окна на дерево-алюминиевые.')
+                    +item('object.jpg','лето', '2021 год', 'Московская область. Поселок Одеялково', 'Работы:  поменяны новые пластиковые окна на дерево-алюминиевые.')
+                    +item('','лето', '2021 год', 'Московская область. Поселок Одеялково', 'Работы:  поменяны новые пластиковые окна на дерево-алюминиевые.')
+        //- ----------------------------------------Цена под ключ
+        - var row = `page-info-row6`
+        section(class=`${row} container`)
+            h2 Цена под ключ  <span> от 11500 р. за пог.м.</span> Укрепление берега лиственницей
+            p Самые распространенные способы укрепления берегов с помощью бруса лиственницы и габиона. Это не только укрепит, но и придаст красивый вид берегу Вашего водоема.
+
+            div(class=`${row}__inner-btn`)
+                a(class=`btn`) Расчитать стоимость
+                a(class=`btn`) Смотреть цены
+
+        // -----------------------частые вопросы
+        - var class_name = 'services-fag'
+        section(class=`${class_name} container`)
+            div(class=`title`) Вопросы и ответы об укреплении берега лиственницей в Нижнем Новгороде
+            - var fag = 'fag'
+
+            div(class=`${fag}`)
+                mixin item(question, answer, active)
+
+                    div(class=`${fag}__item ${active}` data-detail = '1')
+                        div(class=`${fag}__item-question-inner`)
+                            div(class=`${fag}__item-question` data-question = '1')= question
+                            div(class=`${fag}__item-question-plus-inner`)
+                                div(class=`${fag}__item-question-plus`)
+
+                        div(class=`${fag}__item-answer` data-answer = '1')= answer
+
+                +item('Сколько времени потребуется для проведения работ?', 'Наши сотрудники используют современные, надежные и функциональные земснаряды Botsman M. Применение такой техники позволяет достичь высокого качества и отличной производительности. Земснаряды не имеют альтернатив, когда невозможно опустошить водоем.','')
+                +item('Какова стоимость укрепления?', 'Наши сотрудники используют современные, надежные и функциональные земснаряды Botsman M. Применение такой техники позволяет достичь высокого качества и отличной производительности. Земснаряды не имеют альтернатив, когда невозможно опустошить водоем.','')
+                +item('Какова стоимость укрепления?', 'Наши сотрудники используют современные, надежные и функциональные земснаряды Botsman M. Применение такой техники позволяет достичь высокого качества и отличной производительности. Земснаряды не имеют альтернатив, когда невозможно опустошить водоем.','open')
+
+
+
+
+
+
+        //- -----------------------------слайдер другие услуги
+
+        - var class_slider = 'slider-services'
+        section(class=`${class_slider}`)
+            div(class=`${class_slider}__box swiper-container`)
+                div(class=`${class_slider}__wrapper swiper-wrapper`)
+
+
+                    mixin item(img, title, descr)
+                        a(class=`${class_slider}-slide swiper-slide`)
+                            div(class=`${class_slider}-slide-img ${descr}`)
+                                img(src=`custom/my/assets/img/info/serv/${img}` alt=`#`)
+                            div(class=`${class_slider}-slide-title`)= title
+
+
+                    +item('2.jpg', 'Строительство <br><br>Реконструкция зданий', '' )
+                    +item('1.jpg', 'Благо <br> устройство територий', '')
+                    +item('3.jpg', 'Терассы', 'small')
+
+            div(class=`${class_slider}-pagination`)
+
+

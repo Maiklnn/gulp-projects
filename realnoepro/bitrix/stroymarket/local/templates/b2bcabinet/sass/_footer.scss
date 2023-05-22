@@ -1,0 +1,36 @@
+footer {
+  margin-top: auto;
+  padding-top: 30px;
+  padding: 10px;
+  @include r($small) {
+    display: none;
+  }
+
+  .footer-contento {
+    border-top: 1px solid $lightblue;
+    padding: 20px 5px 0 5px;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-contento-menu {
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+          padding-left: 15px;
+        }
+
+        a {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #737373;
+        }
+        &.foot__link {
+          color: #000000;
+        }
+      }
+    }
+  }
+}

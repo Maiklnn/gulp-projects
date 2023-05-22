@@ -1,0 +1,139 @@
+// список заказов поставщик
+#MARKET_ORDER_LIST_SELLER {
+	.main-grid-row-head {
+		.main-grid-cell-head:nth-child(2) {
+			.main-grid-head-title {
+				border-bottom: 1px dotted #737373 !important;
+			}
+		}
+		.main-grid-cell-head:nth-child(3) {
+			.main-grid-head-title {
+				border-bottom: 1px dotted #737373 !important;
+			}
+		}
+		.main-grid-cell-head:nth-child(4) {
+			.main-grid-head-title {
+				border-bottom: 1px dotted #737373 !important;
+			}
+		}
+		.main-grid-cell-head:nth-child(7) {
+			.main-grid-head-title {
+				position: relative;
+				&::before {
+				    position: absolute;
+				    top: 0;
+					right: 0;
+					background: url(assets/images/icon/sort.svg) no-repeat;
+					width: 16px;
+					height: 16px;
+					margin-left: 3px;
+					content: '';
+				}
+
+
+			}
+		}
+		.main-grid-head-filter {
+			display: none;
+		}
+	}
+
+	.main-grid-cell-name {
+		overflow: initial;
+	}
+	.main-grid-cell .order_changed {
+		top: 27px;
+		left: -73px;
+	}
+}
+
+// список заказов покупатель
+#SECTION_LIST_table {
+	.main-grid-row-head {
+		.main-grid-cell-head:nth-child(2) {
+			.main-grid-head-title {
+				border-bottom: 1px dotted #737373 !important;
+			}
+		}
+		.main-grid-cell-head:nth-child(3) {
+			.main-grid-head-title {
+				border-bottom: 1px dotted #737373 !important;
+			}
+		}
+		.main-grid-cell-head:nth-child(4) {
+			.main-grid-head-title {
+				border-bottom: 1px dotted #737373 !important;
+			}
+		}
+		.main-grid-cell-head:nth-child(7) {
+			.main-grid-head-title {
+				position: relative;
+				&::before {
+					position: absolute;
+					top: 0;
+					right: 0;
+					background: url(assets/images/icon/sort.svg) no-repeat;
+					width: 16px;
+					height: 16px;
+					margin-left: 3px;
+					content: '';
+				}
+
+
+			}
+		}
+		.main-grid-head-filter {
+			display: none;
+		}
+		.info {
+			display: none;
+		}
+	}
+	.main-grid-cell-name {
+		overflow: initial;
+	}
+	.main-grid-cell .order_changed {
+		left: -20px;
+	}
+}
+
+
+// состав заказа поставщик
+
+#basic-tab2  {
+	.row:not(.product__list__header) {
+		.product__list-itogo {
+			font-weight: 600;
+		}
+		.product__list__remove {
+			margin-left: 20px;
+			position: initial;
+			width: 14px;
+			height: 16px;
+			background: url(assets/images/icon/delete.svg) no-repeat;
+		}
+	}
+	#specification {
+		.input-group {
+			display: flex;
+			span input {
+				display: none;
+			}
+		}
+
+	}
+}
+
+
+// спецификация закза поставщик
+.blank_detail .product__list{
+	.product__list__header {
+
+
+	}
+
+}
+
+.blank_detail #basic-tab2 dl dt:nth-child(5) {
+
+}

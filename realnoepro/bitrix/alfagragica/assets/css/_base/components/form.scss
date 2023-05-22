@@ -1,0 +1,277 @@
+
+// form
+.placeholder-container {
+	margin-bottom: 10px;
+	position: relative;
+	&__input {
+		height: 52px;
+	}
+
+	&__textarea {
+		height: 122px;
+	}
+
+	input, textarea {
+		background-color: #fff;
+		color: inherit;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 2;
+		border-radius: 10px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-left: 17px;
+		padding-right: 17px;
+		border: none;
+		&:focus {
+			outline: 0;
+			outline-offset: 0;
+		}
+	}
+
+
+
+	.caption {
+		position: absolute;
+		transition: all 1s;
+		top: 50%;
+		z-index: 2;
+		transform: translate(0, -50%);
+		font-size: 15px;
+		padding-left: 15px;
+
+		&__active {
+			opacity: 1;
+			top: 0;
+			padding: 0 15px;
+			z-index: 3;
+			transform: translate(0, -50%);
+			color: $accent;
+			font-size: 14px;
+			background-color: transparent;
+		}
+
+	}
+
+}
+
+.checkbox {
+	position: relative;
+	margin-bottom: 20px;
+
+	&__input {
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+	}
+
+	&__label {
+		cursor: pointer;
+		padding-left: 31px;
+		position: relative;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 17px;
+		color: rgba(0, 0, 0, 0.5);
+		&::before {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 18px;
+			height: 18px;
+			border: 0.72px solid #000000;
+			border-radius: 2.88px;
+			content: '';
+			transition: all .3s;
+		}
+	}
+
+	// при checked
+	&__input:checked + &__label:before {
+		background-color: $accent;
+		border: none;
+	}
+
+
+}
+
+.radio {
+	position: relative;
+	padding: 4px 0;
+
+	// скрываем radio input по default
+	&__input {
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+	}
+
+	// создаём свою радио кнопку
+	&__label {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		&::before {
+			width: 23px;
+			height: 23px;
+			border: 1px solid #CFCFCF;
+			content: '';
+			margin-right: 10px;
+			transition: all .3s;
+			border-radius: 50%;
+		}
+	}
+
+	// при checked
+	&__input:checked + &__label:before {
+		background-color: $accent;
+	}
+
+
+}
+
+.btn {
+	background-color: $accent;
+	display: inline-block;
+	color: #fff;
+	padding: 21px 55px;
+	cursor: pointer;
+	transition: 1s;
+	border: none;
+	font-weight: 600;
+	border-radius: 10px;
+	text-align: center;
+	background-image: none;
+	text-shadow: none;
+	font-size: 16px;
+
+
+	&:hover {
+		opacity: .6;
+	}
+
+}
+
+
+
+
+
+// модальное окно
+.modal-popup {
+	--transition-time: 0.3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0, 0.5);
+	cursor: pointer;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	opacity: 0; // скрыть
+	visibility: hidden; // скрыть
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+
+	// вспомогательный элемент скрыть
+	&::before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+
+	// container модального окна
+	[class*=__container] {
+		position: relative;
+		width: 500px;
+		padding: 30px;
+		margin: 50px auto;
+		// display: none; // скрыть
+		vertical-align: middle;
+		background-color: #fff;
+		border-radius: 10px;
+		cursor: default;
+		@media (max-width: 1024px) {
+			width: 90%;
+		}
+	}
+
+	// close
+	&__close {
+		font-size: 50px;
+		font-weight: bold;
+		color: $accent;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+	}
+
+	// overlay при открытой модалке
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity var(--transition-time), visibility var(--transition-time);
+	}
+
+	// container при открытой модалке
+	&__container.modal-popup-open {
+		display: inline-block;
+	}
+
+	// эффекты
+	.fade {
+		opacity: 0;
+		transition: opacity var(--transition-time);
+	}
+
+	.fade.animate-open {
+		opacity: 1;
+		transition: opacity var(--transition-time);
+	}
+
+	.fadeInUp {
+		opacity: 0;
+		transform: translateY(-100px);
+		transition: opacity var(--transition-time), transform var(--transition-time);
+	}
+
+	.fadeInUp.animate-open {
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity var(--transition-time), transform var(--transition-time);
+	}
+
+	// form
+	.form-modal {
+		text-align: center;
+		&__title {
+			margin-bottom: 20px;
+		}
+		.btn {
+			margin: 0 auto;
+		}
+	}
+	input {
+		border-bottom: 1px solid silver;
+	}
+
+}
+
+// отключение scroll
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+}
+
+
+input[type="text"] {
+	padding: 0 !important;
+	margin: 0 !important;
+}

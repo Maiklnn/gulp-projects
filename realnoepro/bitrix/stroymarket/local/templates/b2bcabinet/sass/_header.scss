@@ -1,0 +1,458 @@
+header.navbar {
+  min-height: 80px;
+  background-color: white;
+  padding-left: 0 !important;
+  color: $black;
+  position: absolute;
+  z-index: 101;
+  width: 100%;
+  max-width: 1480px;
+
+  @include r($small) {
+    min-height: auto;
+    height: 57px;
+  }
+
+  .navbar-logo {
+    width: 223px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    min-height: 80px;
+    background-color: white;
+    z-index: 2;
+
+    .webtb {
+      width: 120px;
+      height: 25px;
+      background-size: cover;
+      background-image: url("data:image/svg+xml,%3Csvg width='123' height='26' viewBox='0 0 123 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.72 25.71L0 0H6.46L10.16 18.35H10.46L14.65 0H21.38L25.64 18.35H25.94L29.34 0H35.81L30.09 25.71H21.94L18.01 9.49H17.75L13.86 25.71H5.72Z' fill='%232E5599'/%3E%3Cpath d='M53.3402 16.2199C53.3402 14.7999 53.3002 13.5499 53.2302 12.4699C53.1502 11.3799 52.9902 10.4599 52.7302 9.68986C52.4702 8.91986 52.0302 8.28986 51.4202 7.79986C50.8102 7.30986 49.9802 6.94986 48.9402 6.70986C47.8902 6.47986 46.5402 6.35986 44.8702 6.35986C42.8002 6.35986 41.1602 6.54986 39.9602 6.93986C38.7502 7.32986 37.8602 7.91986 37.2902 8.71986C36.7202 9.51986 36.3502 10.5399 36.1902 11.7799C36.0302 13.0299 35.9502 14.5099 35.9502 16.2299C35.9502 17.6499 35.9902 18.8999 36.0802 19.9699C36.1702 21.0399 36.3802 21.9599 36.7102 22.7399C37.0502 23.5099 37.5602 24.1399 38.2402 24.6199C38.9202 25.1099 39.8502 25.4599 41.0302 25.6899C42.2002 25.9099 43.6802 26.0299 45.4802 26.0299C46.3302 26.0299 47.2002 25.9999 48.1002 25.9499C49.0002 25.8999 49.8402 25.8299 50.6202 25.7299C51.4002 25.6299 52.0702 25.5199 52.6202 25.3899V21.2099C51.9902 21.2599 51.3302 21.3099 50.6202 21.3599C49.9102 21.4099 49.2302 21.4499 48.5802 21.4699C47.9302 21.4999 47.3702 21.5099 46.9002 21.5099C45.7002 21.5099 44.7702 21.4699 44.1002 21.3799C43.4302 21.2899 42.9302 21.1199 42.6102 20.8699C42.2902 20.6199 42.0902 20.2399 42.0102 19.7299C41.9402 19.2199 41.9002 18.5399 41.9002 17.6999H53.3702V16.2199H53.3402ZM41.9802 12.5199C42.0602 11.9999 42.1902 11.5999 42.3902 11.3199C42.5902 11.0499 42.8802 10.8699 43.2702 10.7799C43.6602 10.6899 44.1702 10.6499 44.8202 10.6499C45.3902 10.6499 45.8602 10.6899 46.2402 10.7599C46.6102 10.8399 46.9102 10.9999 47.1202 11.2699C47.3302 11.5299 47.4802 11.9199 47.5702 12.4499C47.6602 12.9699 47.7002 13.6799 47.7002 14.5799H41.8702C41.8702 13.7299 41.9102 13.0399 41.9802 12.5199Z' fill='%232E5599'/%3E%3Cpath d='M56.5498 0.00976562V25.7198H69.5098C70.9098 25.7198 72.0798 25.5598 73.0398 25.2498C73.9998 24.9398 74.7698 24.4898 75.3598 23.9098C75.9498 23.3198 76.3698 22.6098 76.6298 21.7598C76.8898 20.9098 77.0198 19.9498 77.0198 18.8798C77.0198 17.5798 76.8598 16.5198 76.5298 15.6898C76.2098 14.8598 75.6998 14.1998 75.0198 13.7298C74.3298 13.2598 73.4398 12.9098 72.3498 12.6898V12.5398C73.3698 12.3198 74.2098 11.9598 74.8698 11.4798C75.5298 10.9898 76.0198 10.3398 76.3398 9.51977C76.6098 8.82977 76.7398 7.96977 76.7798 6.99977H70.3098C70.3298 7.22977 70.3498 7.44977 70.3498 7.71977C70.3498 8.43976 70.2598 8.99977 70.0698 9.39977C69.8798 9.79976 69.5498 10.0798 69.0798 10.2398C68.6098 10.3998 67.9498 10.4798 67.0998 10.4798H62.9898V4.90977H89.0798C89.9298 4.90977 90.5698 4.97977 90.9998 5.11977C91.4198 5.25977 91.7098 5.50977 91.8598 5.87977C91.9998 6.22977 92.0698 6.74977 92.0798 7.41977C92.0798 7.34977 92.0898 7.29977 92.0898 7.22977C92.0898 7.84977 92.0398 8.33976 91.9398 8.68976C91.8398 9.03977 91.6198 9.32977 91.2698 9.56977C90.9198 9.80976 90.3898 10.0698 89.6598 10.3698L83.9798 12.6498C82.9798 13.0698 82.1998 13.5398 81.6298 14.0498C81.0598 14.5598 80.6398 15.1798 80.3798 15.8998C80.1198 16.6198 79.9498 17.4898 79.8798 18.5198C79.7998 19.5398 79.7698 20.7598 79.7698 22.1798V25.7298H114.77C115.52 25.7298 116.2 25.6798 116.82 25.5898C117.35 25.5098 117.85 25.4098 118.3 25.2698C119.26 24.9598 120.03 24.5098 120.62 23.9298C121.21 23.3398 121.63 22.6298 121.89 21.7798C122.15 20.9298 122.28 19.9698 122.28 18.8998C122.28 17.5998 122.12 16.5398 121.79 15.7098C121.47 14.8798 120.96 14.2198 120.28 13.7498C119.59 13.2798 118.7 12.9298 117.61 12.7098V12.5598C118.63 12.3398 119.47 11.9798 120.13 11.4998C120.79 11.0098 121.28 10.3598 121.6 9.53977C121.92 8.71977 122.09 7.70977 122.09 6.50977C122.09 6.12977 122.07 5.76977 122.03 5.42977C121.99 4.82977 121.91 4.31977 121.8 3.87977C121.63 3.14977 121.36 2.54977 120.96 2.04977C120.72 1.74977 120.44 1.46977 120.13 1.21977C119.71 0.879766 119.23 0.649766 118.66 0.479766C117.86 0.199766 116.86 0.0997656 115.45 0.0697656C115.42 0.0697656 112.24 0.0597656 112.24 0.0597656C108.2 0.0597656 101.8 0.0497656 101.8 0.0497656V18.5698H108.26V15.0298H112.48C113.35 15.0298 114.03 15.1098 114.52 15.2698C115.01 15.4298 115.34 15.7198 115.51 16.1498C115.68 16.5698 115.77 17.1798 115.77 17.9798C115.77 18.7498 115.68 19.3498 115.51 19.7698C115.33 20.1898 115.01 20.4898 114.54 20.6498C114.47 20.6698 114.36 20.6798 114.28 20.7098H86.0298V19.6998C86.0298 19.1498 86.0798 18.7098 86.1798 18.3698C86.2798 18.0298 86.4598 17.7598 86.7198 17.5498C86.9798 17.3398 87.3598 17.1298 87.8598 16.9298L93.1698 14.8598C94.0898 14.4898 95.7198 13.5798 96.3698 13.0098C97.0198 12.4398 97.5098 11.6698 97.8498 10.6898C98.1498 9.80976 98.3198 8.67977 98.3498 7.28977C98.3298 6.15977 98.2698 5.26977 98.1198 4.52977C97.9398 3.52977 97.6398 2.75977 97.1298 2.11977C96.8698 1.79977 96.5798 1.49977 96.2598 1.24977C94.8398 0.119766 92.8098 0.0197656 88.9798 0.00976562H56.5498ZM115.38 9.38977C115.19 9.78977 114.86 10.0698 114.39 10.2298C113.92 10.3898 113.26 10.4698 112.41 10.4698H108.3V4.90977H112.41C113.33 4.90977 114.02 4.97977 114.48 5.12977C114.94 5.27977 115.25 5.54977 115.41 5.94977C115.57 6.34977 115.65 6.92977 115.65 7.70977C115.66 8.42977 115.56 8.98977 115.38 9.38977ZM67.2398 14.9898C68.1098 14.9898 68.7898 15.0698 69.2798 15.2298C69.7698 15.3898 70.0998 15.6798 70.2698 16.1098C70.4398 16.5298 70.5298 17.1398 70.5298 17.9398C70.5298 18.7098 70.4398 19.3098 70.2698 19.7298C70.0898 20.1498 69.7698 20.4498 69.2998 20.6098C68.8298 20.7698 68.1398 20.8498 67.2498 20.8498H63.0298V14.9798H67.2398V14.9898Z' fill='%232E5599'/%3E%3C/svg%3E%0A");
+    }
+
+    img {
+      max-height: 50px;
+    }
+  }
+
+  &.hide-top {
+    animation: headerHide .5s forwards;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 994;
+  }
+
+  &.fixed-top {
+    animation: headerShow .5s forwards;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 994;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    z-index: 2;
+
+    a {
+      position: relative;
+    }
+
+    .header-left-block {
+      .header-company {
+        display: flex;
+        align-items: center;
+
+        &-name {
+          max-width: 210px;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+          font-weight: 800;
+        }
+
+        &-logo {
+          padding: 0 16px;
+
+          a {
+            position: relative;
+
+            &:hover::after {
+              content: attr(data-title);
+              position: absolute;
+              background-color: rgba(255, 255, 255, .9);
+              border: 1px solid $lightblue;
+              border-radius: 4px;
+              padding: 5px 10px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        &-arrow {
+          margin-left: 2px;
+
+          i.icon-arrow-down12::before {
+            width: 12px;
+            height: 6px;
+          }
+        }
+
+        &-select {
+          padding-left: 20px;
+          @include r($small) {
+            padding-right: 10px;
+            padding-left: 10px;
+            border-left: 1px solid $lightblue;
+            border-right: 1px solid $lightblue;
+          }
+
+          .btn {
+            text-align: left;
+            padding: 12px;
+          }
+
+          .header-company-select-name {
+            position: relative;
+            @include r($small) {
+              border: none;
+              padding-bottom: 5px;
+              min-width: 150px;
+              &::before {
+                content: "B2B-кабинет компании";
+                font-size: 10px;
+                color: $darkblue;
+                position: absolute;
+                top: -3px;
+              }
+            }
+          }
+
+          .stores_list {
+            position: absolute;
+            background-color: white;
+            padding: 24px;
+            display: none;
+            z-index: 10;
+            margin-top: 2px;
+            box-shadow: 0px 2px 3px $lightblue;
+
+            &.active {
+              display: block;
+            }
+
+            @include r($small) {
+              left: 0;
+              width: 100%;
+            }
+
+            .stores_list_input {
+              position: relative;
+              margin-bottom: 16px;
+
+              input {
+                width: 252px;
+                height: 32px;
+                background-color: $bg_color;
+                border: none;
+                padding: 10px;
+                border-radius: 4px;
+                font-size: 14px;
+                @include r($small) {
+                  width: 100%;
+                }
+              }
+
+              img {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                right: 11px;
+                top: 5px;
+              }
+            }
+
+            ul {
+              list-style-type: none;
+              padding-left: 0;
+              max-height: 420px;
+              overflow: hidden;
+              overflow-y: scroll;
+              position: relative;
+              margin-bottom: 0;
+
+              &::-webkit-scrollbar {
+                width: 6px;
+              }
+
+              &::-webkit-scrollbar-track {
+                background: #E9EDF5;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background-color: $color-ui-base;
+                border-radius: 4px;
+              }
+
+              &::-webkit-scrollbar-button {
+                background: none;
+              }
+
+              &::-webkit-scrollbar-corner {
+                background: none;
+              }
+
+              a.btn {
+                text-align: left;
+                display: block;
+                border: none;
+                padding: 10px 0;
+                color: $black;
+                margin-bottom: 16px;
+
+                &:hover {
+                  color: $primary;
+                  background: none;
+                }
+              }
+            }
+          }
+
+          .stores_list_scroll {
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 40px;
+              bottom: 10px;
+              background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 72.4%);
+            }
+          }
+        }
+
+        &-user {
+          padding: 10px 15px;
+          z-index: 3;
+        }
+      }
+
+      .header-logo-image {
+        max-width: 180px;
+        max-height: 48px;
+        object-fit: contain;
+      }
+
+      .header-logo-text {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .header-right-block {
+      i.icon {
+        position: relative;
+        padding-right: 11px;
+        padding-left: 26px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include r($small) {
+        padding-left: 20px;
+      }
+
+      .header-callpy, .header-logout {
+        margin-left: 25px;
+      }
+
+      .header-basket {
+        margin-left: 35px;
+        position: relative;
+        @include r($small) {
+          margin-left: 20px;
+        }
+
+        a:after {
+          left: 0;
+        }
+
+        i.icon {
+          padding-right: 10px;
+
+          img {
+            @include r($small) {
+              top: -3px;
+            }
+          }
+        }
+
+        .badge {
+          color: white;
+          background-color: $primary;
+          padding: 2px 6px;
+          border-radius: 100px;
+          position: absolute;
+          left: 14px;
+          top: -9px;
+        }
+      }
+
+      .header-title {
+        display: none;
+        @include r($small) {
+          display: block;
+          font-weight: bold;
+          color: $text;
+          position: absolute;
+          width: 100%;
+          background-color: white;
+          padding: 20px 0px 18px 80px;
+          z-index: 2;
+          &.header-title-order {
+            display: flex;
+            padding: 5px 16px;
+            align-items: center;
+            justify-content: space-between;
+            left: 0;
+            padding-left: 0;
+            z-index: 3;
+
+            .order-title {
+              margin-right: auto;
+            }
+
+            .dropdown-menu {
+              left: -160px;
+            }
+
+            .btn-back {
+              background-color: white;
+              border: none;
+              border-right: 1px solid $lightblue;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include r($small) {
+    justify-content: space-between;
+  }
+
+}
+
+.header-elements-toggle.text-default.d-md-none {
+  display: none;
+}
+
+.header-elements {
+  align-items: center;
+}
+
+.header-elements a.cart-in-header:focus, .header-elements a.cart-in-header:hover {
+  color: #fff;
+}
+
+.header-elements .cart-in-header > i {
+  font-size: 20px;
+}
+
+.header-elements .cart-in-header > i > span {
+  background-color: #fe7a4f;
+  border-radius: 100%;
+  color: #fff;
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  height: 21px;
+  min-width: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #252b38;
+  text-align: center;
+  top: -11px;
+  font-size: 11px;
+  padding: 0 2px;
+}
+
+.navbar__mobile {
+  display: none;
+  height: 64px;
+  z-index: 999;
+  @include r($small) {
+    font-size: 12px;
+    line-height: 16px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 0;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 6px 0 5px 0;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      text-align: center;
+      position: relative;
+      width: 25%;
+
+      &.active:before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 4px;
+        left: 5%;
+        bottom: 51px;
+        border: 1px solid $green;
+        background-color: $green;
+      }
+
+      svg {
+        margin: 0 auto 4px;
+      }
+    }
+
+    svg, img, i {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin: 1px auto 4px;
+    }
+  }
+}
+
+@keyframes headerShow {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes headerHide {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-80px);
+  }
+}

@@ -1,0 +1,84 @@
+.update-price {
+	display: grid;
+	width: 1044px;
+	grid-template-columns: 368px 535px;
+	gap: 40px;
+	padding: 40px;
+	background: #FFFFFF;
+	border: 1px solid #EDEDED;
+	border-radius: 4px;
+	&__caption {
+		margin-bottom: 16px;
+	}
+	ul {
+		list-style: none;
+		margin: 8px 0 16px 0;
+		padding: 0;
+	}
+	li {
+		margin-bottom: 8px;
+		display: flex;
+		gap: 8px;
+		strong {
+			color: $primary;
+			font-weight: 600;
+		}
+	}
+
+	&__download {
+		padding: 16px 24px 16px 100px;
+		margin-bottom: 16px;
+		border: 1px dashed #000000;
+		border-radius: 4px;
+		display: block;
+		font-weight: 700;
+		position: relative;
+		&:before {
+			content: '';
+			background: url("/local/templates/b2bcabinet/assets/images/icon/download.svg");
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 24px;
+			top: 3px;
+			background-repeat: no-repeat;
+		}
+		span {
+			display: block;
+			color: #737373;
+		}
+
+	}
+
+	&__table-update {
+		background: #F7F7F7;
+		border: 1px dashed #000000;
+		border-radius: 4px;
+		padding: 16px 24px 16px 100px;
+		margin-bottom: 16px;
+		position: relative;
+		p {
+			font-weight: 700;
+		}
+		&:before {
+			content: '';
+			background: url("/local/templates/b2bcabinet/assets/images/icon/download-plus.svg");
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 24px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-repeat: no-repeat;
+		}
+		.adm-fileinput-drag-area-hint {
+			border: none;
+			min-height: initial;
+		}
+		.adm-fileinput-area {
+			flex-direction: initial;
+			min-height: initial !important;
+		}
+
+	}
+}

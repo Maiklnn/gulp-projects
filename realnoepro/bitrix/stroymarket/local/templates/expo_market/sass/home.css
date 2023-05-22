@@ -1,0 +1,23 @@
+.home-partners {
+  margin-bottom: 100px;
+}
+.home-partners [class*=__container] {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+.home-partners__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 246px);
+}
+.home-partners-item__img {
+  padding: 52px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-partners-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,144 @@
+.bx_news {
+      padding: 0;
+}
+
+.page-header {
+  padding-top: 80px;
+  @include r($small) {
+    padding-top: 0;
+    display: none;
+  }
+
+  .page-header-content {
+    position: relative;
+    padding-left: 5px;
+    margin: 24px 0 16px;
+    @include r($small) {
+      margin: 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: $black;
+      font-weight: 700;
+      line-height: normal;
+      @include r($small) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .page-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include r($small) {
+      align-items: center;
+    }
+  }
+}
+
+.page-content {
+  background-color: $bg_color;
+  @include r($small) {
+    margin-top: 65px;
+  }
+
+  .breadcrumb {
+    padding-bottom: 5px;
+    font-size: 14px;
+
+    .breadcrumb-item + .breadcrumb-item::before {
+      padding-left: .625rem;
+    }
+
+    .breadcrumb-item {
+      padding: .625rem 0 0 0;
+
+      &.active {
+        color: #7D95BD;
+      }
+
+      i {
+        display: none;
+      }
+    }
+  }
+}
+
+.page-content-area {
+  // margin-right: 20px;
+  margin-bottom: 10px;
+  @include r($small) {
+    margin-bottom: 64px;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  h2 {
+    color: $black;
+    font-size: 24px;
+    font-weight: 500;
+    @include r($small) {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  h2.card-title, h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .product__list__header, .main-grid {
+
+    .main-grid-head-title {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: initial;
+      color: #737373;
+      letter-spacing: 0;
+      display: flex;
+      border-bottom: none !important;
+      &__sortable {
+          cursor: pointer;
+      }
+      &__sort {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 14px;
+          height: 14px;
+          &.asc {
+              transform: rotate(180deg);
+          }
+          svg {
+              max-width: 50%;
+          }
+      }
+    }
+
+    .main-grid-cell {
+      .img-product {
+        display: flex;
+        align-items: center;
+        max-width: 250px;
+        white-space: pre-wrap;
+
+        img {
+          float: left;
+          margin-right: 16px;
+          @include r($small) {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .touchspin-empty {
+      font-size: 14px;
+    }
+  }
+}

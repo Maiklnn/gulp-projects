@@ -1,0 +1,213 @@
+.sidebar {
+  background-color: $gray;
+  align-self: flex-start; /* <-- this is the fix */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 212px;
+
+  @include r($small) {
+    display: none;
+  }
+
+  &.sidebar-main {
+    .sidebar-user {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: '';
+        border-bottom: 1px solid $lightblue;
+        width: 80%;
+        transform: translateX(-50%);
+        bottom: 0;
+        left: 50%;
+      }
+
+      .card-body {
+        padding: 24px 20px 16px 20px;
+      }
+
+      .bx-user-info-anchor-cell {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          position: absolute;
+          content: '';
+          border-left: 4px solid $orange;
+          top: 0;
+          max-height: 60px;
+          height: 100%;
+          left: -10px;
+        }
+
+
+
+        .bx-user-info-photo {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+          margin-right: 3px;
+          margin-left: -2px;
+        }
+
+        i.icon {
+          margin-left: 5px;
+
+          img {
+            top: 0;
+          }
+        }
+
+        .bx-user-info-anchor-cell-settings {
+          padding-left: 5px;
+          display: flex;
+          align-items: flex-end;
+
+          .bx-user-info-name {
+            word-break: break-word;
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+           }
+
+          i {
+            font-weight: 900;
+            font-size: 15px;
+            padding-left: 5px;
+          }
+        }
+
+        .bx-user-info-role {
+          padding-left: 5px;
+          font-size: 14px;
+          margin-top: 5px;
+          position: relative;
+
+          &-select {
+            cursor: pointer;
+            font-size: 12px;
+            color: $darkgray;
+
+            i {
+              transition: .3s;
+            }
+
+            &.active {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+
+            &-list {
+              display: none;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              z-index: 20;
+              background-color: white;
+              margin-top: 5px;
+
+              &.active {
+                display: block;
+              }
+
+              li {
+                a {
+                  display: block;
+                  padding: 5px;
+                  border: 1px solid #E7EFFD;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nav-sidebar {
+      padding-bottom: 80px;
+      .nav-link i {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &.smartfilter_wrapper {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    height: 100%;
+    bottom: 0;
+    overflow: inherit;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #E9EDF5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-ui-base;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-button {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: none;
+  }
+
+  .sidebar-content {
+    z-index: 100;
+    margin-top: 80px;
+
+    .card {
+      margin-top: 0 !important;
+    }
+
+    .nav-item {
+      font-size: 14px;
+      padding-top: 12px;
+      padding-left: 20px;
+
+      &:first-child {
+        padding-top: 16px;
+      }
+
+      a {
+        padding: 0;
+      }
+    }
+
+    .nav-item-header {
+      color: #000;
+      line-height: 16px;
+    }
+
+    .order_changed {
+      position: relative;
+      top: 10px;
+      right: -20px;
+      left: inherit;
+      transition: inherit;
+    }
+  }
+}
+
+.bx-user-info-anchor-cell::after {
+  border-left: 4px solid #FF6000;
+}
+
+

@@ -1,0 +1,31 @@
+@import "sass/mixins";
+@import "sass/vars";
+@import "sass/default";
+@import "sass/header";
+@import "sass/footer";
+@import "sass/sidebar";
+@import "sass/page";
+@import "sass/grid";
+@import "sass/offer";
+@import "sass/fancybox";
+@import "sass/tips";
+@import "sass/form";
+@import "sass/modal";
+
+// pages
+@import "sass/pages";
+@import "sass/pages/catalog";
+@import "sass/pages/basket";
+@import "sass/pages/tarif";
+@import "sass/pages/order";
+@import "sass/pages/lk/update-price";
+@import "sass/pages/lk/add-services";
+@import "sass/pages/lk/cabinet-privider";
+
+@import "sass/pages/lk/table";
+@import "../expo_market/sass/main";
+
+
+
+// @import "sass/edit";
+
