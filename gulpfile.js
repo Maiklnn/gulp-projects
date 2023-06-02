@@ -36,10 +36,13 @@ const settings = {
 	// src: 'realnoepro/wp/ecoprosvet'
 	// src: 'projects/different/anim-sohial'
 	// src: 'projects/different/gptchat'
-
 	//-------------------diafan
 	// src: 'realnoepro/diafan/sparta'
 	src: 'realnoepro/diafan/gugos',
+
+
+	//-------------------different
+	// src: 'realnoepro/different/autozavod',
 }
 
 // Пути

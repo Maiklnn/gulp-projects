@@ -1,0 +1,36 @@
+.modal-popup-gallery {
+	width: initial;
+	padding: 10px;
+
+	.gallery {
+
+		&__inner-img {
+			position: relative;
+			.arr-left, .arr-right {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 57px;
+				height: 57px;
+			}
+			.arr-left {
+				left: 20px;
+			}
+			.arr-right {
+				right: 20px;
+			}
+		}
+
+		&__nav {
+			margin-top: 20px;
+			display: flex;
+			gap: 20px;
+			&-previous, &-next {
+				cursor: pointer;
+			}
+		}
+
+
+	}
+}
+

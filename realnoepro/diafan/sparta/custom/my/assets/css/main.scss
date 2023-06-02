@@ -2,14 +2,12 @@ $accent: #BB0208;
 
 .main-advantages {
 
-
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
 		list-style: none;
 		padding-top: 27px;
-
 		li {
 			cursor: pointer;
 
@@ -74,7 +72,12 @@ $accent: #BB0208;
 
 .tab {
 	&__nav {
-
+		display: flex;
+		gap: 20px;
+		font-size: 18px;
+		@media(max-width: 700px) {
+			flex-direction: column;
+		}
 	}
 
 	&__link:hover {
@@ -83,18 +86,23 @@ $accent: #BB0208;
 
 	&__link--active {
 		color: $accent;
+		text-decoration: underline;
 	}
+
 	&__content-item {
-		height: 0;
-		opacity: 0;
+		transform: rotateX(-90deg);
+		transform-origin: 0 0;
+		transition: transform 1s linear;
 		overflow: hidden;
-		transition: all 1s
+		height: 0;
 	}
 
 	&__content-item--active {
-		height: auto;
+		transform: rotateX(0);
 		opacity: 1;
-		overflow: visible
+		overflow: visible;
+		height: auto;
+
 	}
 
 }

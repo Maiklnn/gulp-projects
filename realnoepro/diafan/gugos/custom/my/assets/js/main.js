@@ -7755,7 +7755,6 @@ new Run();
 				if (this.element.dataset.form) {
 					e.preventDefault();
 					this.form = this.element.closest('form');
-					console.log(this.form);
 					this.validate();
 				}
 
@@ -7896,18 +7895,15 @@ new Run();
 			// доп данные
 			this.dataValue = this.form.querySelectorAll(`[data-value]`);
 			this.dataValue.forEach(item => {
-				let name = item.getAttribute('name');
-				let value = item.dataset.value;
-				if(name === 'dataForm') {
-					let arVal = value.split("::");
-					arVal.forEach(item => {
-						let subValue = item.split("=");
-						if(subValue[0] === 'target') this.yaTarget = subValue[1];
-						this.formData.push([`${subValue[0]}`, `${subValue[1]}`]);
-					});
-					return
-				}
-				this.formData.push([`${name}`, `${value}`]);
+				let arrField = item.dataset.value.split("::");
+				arrField.forEach(item => {
+					let field = item.split("=");
+					if(field[0] === 'target') {
+						eval(field[1])
+						return
+					}
+					this.formData.push([`${field[0]}`, `${field[1]}`]);
+				})
 			});
 
 			// данные из localStorage
@@ -7984,5 +7980,28 @@ new Run();
 
 	});
 }
+
+// filter
+
+document.addEventListener('click', (e) => {
+	if(e.target.classList.contains('page-objects__cats-item')) {
+		e.preventDefault();
+		let select = e.target.dataset.select
+
+		let list = document.querySelector('.list-objects')
+		let objects = list.querySelectorAll('.page-objects__row')
+		objects.forEach(item => {
+			let data_str = item.dataset.cat
+			console.log(data_str)
+			indexOf = data_str.indexOf(select);
+			console.log(indexOf)
+			if(indexOf === -1) {
+				item.style.display = "none";
+			} else {
+				item.style.display = "flex";
+			}
+		})
+	}
+})
 
 
